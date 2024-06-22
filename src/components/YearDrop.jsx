@@ -1,7 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
+import { SermonContext } from './GlobalState';
+import earlySermons from '../sermons/1964-1969/firstset';
+import secondSet from '../sermons/1970/1970';
+import thirdSet from '../sermons/1971/1971';
+import fourthSet from '../sermons/1972/1972';
+import lastSet from '../sermons/1973/1973';
+import audioSermons from '../sermons/audio';
+
+const sermonCollection = [
+  ...earlySermons,
+  ...secondSet,
+  ...thirdSet,
+  ...fourthSet,
+  ...lastSet,
+  ...audioSermons
+];
 
 const YearDrop = () => {
+  const { setAllSermons } = useContext(SermonContext);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [filteredSermons, setFilteredSermons] = useState(sermonCollection);
+  const dropdownRef = useRef(null);
 
   const years = [
     '1963', '1964', '1965', '1966', '1967', '1968',
@@ -12,54 +31,78 @@ const YearDrop = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const closeDropdown = () => {
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    setAllSermons(filteredSermons);
+  }, [filteredSermons, setAllSermons]);
+
+  const filterByYear = (e) => {
+    const year = e.target.textContent;
+    const yearFiltered = sermonCollection.filter((eachSermon) => {
+      return eachSermon.year === year;
+    });
+    
+    setFilteredSermons(yearFiltered);
+    setDropdownOpen(false); // Close the dropdown after filtering
+  };
+
+  const resetFilter = () => {
+    setFilteredSermons(sermonCollection);
     setDropdownOpen(false);
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative z-40 inline-block text-left" ref={dropdownRef}>
       <button
-        id="dropdownOffsetButton"
         onClick={toggleDropdown}
-        className="text-white shadow-lighter shadow-sm focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center dark:bg-blue-600"
+        className="text-white bg-blue-600 focus:ring-4 shadow-sm focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center"
         type="button"
       >
         Year
         <svg
-          className="w-2.5 h-2.5 ms-3 rtl:rotate-180"
-          aria-hidden="true"
+          className={`w-2.5 h-2.5 ml-3 transform ${dropdownOpen ? 'rotate-90' : 'rotate-0'}`}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 6 10"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="m1 9 4-4-4-4"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
-      <div
-        id="dropdownDistance"
-        onMouseLeave={closeDropdown}
-        className={`z-30 absolute left-20 p-4 mt-2 bg-background divide-y divide-gray-100 rounded-lg shadow w-[24rem] dark:bg-gray-700 ${
-          dropdownOpen ? 'block' : 'hidden'
-        }`}
-      >
-        <div className="grid grid-cols-5 gap-1 py-2 text-sm text-gray-700 dark:text-gray-200 ">
-          {years.map((year) => (
+      {dropdownOpen && (
+        <div className="z-50 absolute left-20 p-4 mt-2 bg-gray-800 rounded-lg shadow w-96">
+          <div className="grid grid-cols-5 gap-1 py-2 text-sm text-gray-200">
+            {years.map((year) => (
+              <div
+                onClick={filterByYear}
+                key={year}
+                className="h-6 w-14 text-center flex items-center justify-center px-2 py-2 bg-gray-700 rounded cursor-pointer"
+              >
+                {year}
+              </div>
+            ))}
             <div
-              key={year}
-              className="h-6 w-14 text-center text-mono flex items-center justify-center px-2 py-2 bg-[rgba(0,0,0,0.6)] text-text"
+              onClick={resetFilter}
+              className="col-span-5 h-6 w-14 text-center flex items-center justify-center px-2 py-2 bg-gray-700 rounded cursor-pointer"
             >
-              {year}
+              Reset
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

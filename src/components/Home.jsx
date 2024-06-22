@@ -1,18 +1,37 @@
-// app/renderer/pages/Home.jsx
-import React, { useState } from 'react';
+import React, { useState, useContext, useCallback } from 'react';
+import { SermonContext } from '../components/GlobalState';
 import { motion, AnimatePresence } from 'framer-motion';
 import HomeContent from './HomeContent';
 import SermonsContent from './SermonsContent';
 import VideosContent from './VideosContent';
 import SettingsContent from './SettingsContent';
 import SongsContent from './SongContent';
+import SearchBar from './SearchBar';
 import YearDrop from './YearDrop';
-import { FaHome, FaBook, FaVideo, FaCog, FaMusic } from 'react-icons/fa';
+import {
+  FaHome,
+  FaBook,
+  FaVideo,
+  FaCog,
+  FaMusic,
+  FaTimes,
+  FaSort,
+} from 'react-icons/fa';
 import TitleDrop from './TitleDrop';
+import SermonList from './SermonList';
 
 const Home = () => {
+  const {
+    selectedSermon,
+    sermonsInTab,
+    setSelectedSermon,
+    deleteSermonInTab,
+    allSermons,
+    setAllSermons,
+  } = useContext(SermonContext);
   const [activeTab, setActiveTab] = useState('Home');
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const [ascending, setAscending] = useState(true); // State to manage ascending or descending order
 
   const renderContent = () => {
     switch (activeTab) {
@@ -31,10 +50,31 @@ const Home = () => {
     }
   };
 
+  const sortByTitle = () => {
+    const sortedSermons = [...allSermons].sort((a, b) => {
+      const titleA = a.title.toUpperCase();
+      const titleB = b.title.toUpperCase();
+      if (ascending) {
+        return titleA.localeCompare(titleB);
+      } else {
+        return titleB.localeCompare(titleA);
+      }
+    });
+    setAllSermons(sortedSermons);
+    setAscending(!ascending); // Toggle between ascending and descending
+  };
+
   const iconVariants = {
     hover: { scale: 1.2 },
     tap: { scale: 0.9 },
   };
+
+  const handleSermonClick = useCallback(
+    (sermon) => {
+      setSelectedSermon(sermon);
+    },
+    [setSelectedSermon]
+  );
 
   return (
     <motion.div
@@ -46,27 +86,27 @@ const Home = () => {
       <header className="bg-background text-text fixed top-0 left-0 right-0 z-10">
         <div className="flex items-center space-x-4 p-3 justify-between">
           <div className="flex items-center justify-center gap-4">
-            <FaBook
-              className="text-textBlue hover:cursor-pointer"
-              onClick={() => {
-                setActiveTab('Sermons');
-                setIsSidebarVisible((prev) => !prev);
-              }}
-            />
+            <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
+              <FaBook
+                size={22}
+                className="text-text hover:cursor-pointer"
+                onClick={() => {
+                  setActiveTab('Sermons');
+                  setIsSidebarVisible((prev) => !prev);
+                }}
+              />
+            </div>
+            <div
+              className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer"
+              onClick={sortByTitle}
+            >
+              <FaSort size={22} />
+            </div>
             <TitleDrop />
             <YearDrop />
-
-            <div className=" flex bg-[rgba(0,0,0,0.4)] w-[30vw] rounded-md border">
-              <input
-                type="text"
-                placeholder="Search..."
-                className="p-2 bg-[transparent] w-[95%]  "
-              />
-              <div className="p-2 text-[1rem] hover:cursor-pointer">🍳</div>
-            </div>
-
+            <SearchBar />
           </div>
-          <div className="flex items-center justify-center gap-4 ">
+          <div className="flex items-center justify-center gap-8 pr-10">
             <motion.div
               className="cursor-pointer"
               variants={iconVariants}
@@ -74,10 +114,12 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Home')}
             >
-              <FaHome />
+              <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
+                <FaHome size={22} />
+              </div>
             </motion.div>
             <motion.div
-              className="cursor-pointer"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
@@ -86,71 +128,81 @@ const Home = () => {
                 setIsSidebarVisible((prev) => !prev);
               }}
             >
-              <FaBook />
+              <FaBook size={22} />
             </motion.div>
             <motion.div
-              className="cursor-pointer"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
               onClick={() => setActiveTab('Videos')}
             >
-              <FaVideo />
+              <FaVideo size={22} />
             </motion.div>
             <motion.div
-              className="cursor-pointer"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
               onClick={() => setActiveTab('Settings')}
             >
-              <FaCog />
+              <FaCog size={22} />
             </motion.div>
             <motion.div
-              className="cursor-pointer"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
               onClick={() => setActiveTab('Songs')}
             >
-              <FaMusic />
+              <FaMusic size={22} />
             </motion.div>
           </div>
         </div>
-        <div className="bg-lighter p-4"></div>
+        {activeTab === 'Sermons' ? (
+          <div className="bg-lighter p-2 gap-3 flex items-center justify-between">
+            <div className="">
+              <p className="font-mono text-text">{selectedSermon?.title}</p>
+              <p className="text-textBlue font-mono"> {selectedSermon?.date}</p>
+            </div>
+            {sermonsInTab.length > 0 ? (
+              <div className="flex item-center justify-center gap-2">
+                {sermonsInTab.map((sermon) => (
+                  <div
+                    className="flex items-center justify-center p-2 rounded-lg bg-background gap-2 hover:cursor-pointer group"
+                    key={sermon.id}
+                    onClick={() => handleSermonClick(sermon)}
+                  >
+                    <p className="text-[.7rem]">{sermon.title.slice(0, 10)}</p>
+                    <FaTimes
+                      className="text-textBlue text-[.5rem] cursor-pointer size-3 opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out transform group-hover:scale-110"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        deleteSermonInTab(sermon);
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              ''
+            )}
+          </div>
+        ) : (
+          ''
+        )}
       </header>
-      <div className="flex overflow-hidden pt-16">
+      <div className="flex  pt-16">
         <AnimatePresence>
-          {isSidebarVisible && activeTab === 'Sermons' && (
+          {!isSidebarVisible && activeTab === 'Sermons' && (
             <motion.aside
               initial={{ x: -250 }}
               animate={{ x: 0 }}
               exit={{ x: -250 }}
               transition={{ duration: 0.3 }}
-              className="w-64 bg-gradient-to-b from-background to-lighter text-white p-4 overflow-y-auto fixed inset-y-0 z-10 mt-16"
+              className="w-[24rem] bg-gradient-to-b from-background to-lighter text-white p-4 overflow-y-auto fixed inset-y-0  mt-[8rem]"
             >
-              <ul>
-                <li className="mb-2">
-                  <a href="/" className="hover:underline">
-                    Sermon 1
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="/" className="hover:underline">
-                    Sermon 2
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="/" className="hover:underline">
-                    Sermon 3
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="/" className="hover:underline">
-                    Sermon 4
-                  </a>
-                </li>
-              </ul>
+              <SermonList setIsSidebarVisible={setIsSidebarVisible} />
             </motion.aside>
           )}
         </AnimatePresence>

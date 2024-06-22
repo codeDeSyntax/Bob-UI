@@ -3,7 +3,7 @@ import React from 'react';
 
 const HomeContent = () => {
   return (
-    <div className="relative h-[100vh] flex-1 flex items-center justify-center bg-gray-100">
+    <div className="relative h-[100vh] flex-1 flex items-center justify-center bg-background">
       <img
         src="darker.jpg"
         alt="Main"
