@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { SermonContext } from '../components/GlobalState';
 
-const SearchBar = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+const SearchBar = ({ searchText }) => {
+  const { searchTerm, setSearchTerm } = useContext(SermonContext);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log('Searching for:', searchTerm);
+    searchText(searchTerm);
   };
 
   return (
-    <form onSubmit={handleSearch} className="flex items-center">
+    <form onSubmit={handleSearch} className="flex items-center ">
       <div className="relative w-64 h-12">
         <input
           type="text"
@@ -23,7 +24,7 @@ const SearchBar = () => {
           type="submit"
           className="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center shadow-sm hover:bg-gray-600 transition-colors duration-300"
         >
-         <FaSearch/>
+          <FaSearch />
         </button>
       </div>
     </form>

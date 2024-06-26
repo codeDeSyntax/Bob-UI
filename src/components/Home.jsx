@@ -1,4 +1,4 @@
-import React, { useState, useContext, useCallback } from 'react';
+import React, { useState, useContext, useCallback, useRef } from 'react';
 import { SermonContext } from '../components/GlobalState';
 import { motion, AnimatePresence } from 'framer-motion';
 import HomeContent from './HomeContent';
@@ -32,13 +32,13 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState('Home');
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [ascending, setAscending] = useState(true); // State to manage ascending or descending order
-
+  const sermonTextRef = useRef(null);
   const renderContent = () => {
     switch (activeTab) {
       case 'Home':
         return <HomeContent />;
       case 'Sermons':
-        return <SermonsContent />;
+        return <SermonsContent sermonTextRef={sermonTextRef}/>;
       case 'Videos':
         return <VideosContent />;
       case 'Settings':
@@ -76,6 +76,42 @@ const Home = () => {
     [setSelectedSermon]
   );
 
+  const searchText = (searchTerm) => {
+    const input = searchTerm.trim().toLowerCase();
+    const paragraph = sermonTextRef.current;
+    const text = paragraph.innerText;
+
+    // Remove previous highlights
+    paragraph.innerHTML = text;
+
+    if (input.length > 0) {
+      const escapedInput = escapeRegExp(input);
+      const regex = new RegExp(`(${escapedInput})`, 'gi');
+      const matches = [...text.matchAll(regex)];
+
+      if (matches.length > 0) {
+        let highlightedText = text.replace(
+          regex,
+          '<span class="highlight">$1</span>'
+        );
+        paragraph.innerHTML = highlightedText;
+
+        // Scroll to the first highlighted text
+        const highlightElement = document.querySelector('.highlight');
+        if (highlightElement) {
+          highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } else {
+        // Reset scroll position if no match is found
+        window.scrollTo(0, 0);
+      }
+    }
+  };
+
+  const escapeRegExp = (string) => {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -104,7 +140,7 @@ const Home = () => {
             </div>
             <TitleDrop />
             <YearDrop />
-            <SearchBar />
+            <SearchBar searchText={searchText}/>
           </div>
           <div className="flex items-center justify-center gap-8 pr-10">
             <motion.div
@@ -146,7 +182,7 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Settings')}
             >
-              <FaCog size={22} />
+              <FaCog size={22} className='animate-spin'/>
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
@@ -207,13 +243,13 @@ const Home = () => {
           )}
         </AnimatePresence>
         <main
-          className={`flex-1 flex flex-col overflow-y-auto ${
+          className={` flex flex-col overflow-y-auto overflow-x-hidden ${
             isSidebarVisible && activeTab === 'Sermons' ? '' : ''
           }`}
           style={{
             backgroundImage: 'url(darker.jpg)',
             backgroundSize: 'cover',
-            width: '100%',
+            width: '100vw',
             backgroundPosition: 'center',
           }}
         >

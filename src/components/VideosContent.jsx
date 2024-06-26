@@ -18,7 +18,7 @@ const images = [
   '/gallery/eagle5.jpeg',
   '/gallery/lamb1.jpeg',
   '/gallery/lamb.jpeg',
-  '/gallery/brick.jpeg',
+  '/broBob.png',
   '/gallery/moon2.jpeg',
   '/gallery/lamb2.jpeg',
   '/gallery/splash.jpeg',
@@ -30,7 +30,7 @@ const images = [
 
 const VideosContent = () => {
   return (
-    <div className="flex flex-wrap justify-center p-4 bg-gray-800 min-h-screen">
+    <div className="flex flex-wrap justify-center p-4 bg-gradient-to-b from-gray-700 to-blue-900 text-white min-h-screen">
       {images.map((src, index) => (
         <motion.div
           key={index}

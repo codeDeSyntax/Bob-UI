@@ -19,6 +19,7 @@ const sermonCollection = [
 const SermonProvider = ({ children }) => {
   const [selectedSermon, setSelectedSermon] = useState('');
   const [allSermons, setAllSermons] = useState([]);
+  const [searchTerm, setSearchTerm] = useState([]);
   const [sermonsInTab, setSermonsInTab] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -67,6 +68,18 @@ const SermonProvider = ({ children }) => {
     setSelectedSermon(sermon)
   }
 
+
+  const [settings, setSettings] = useState({
+    textSize: '3',
+    textColor: '',
+    backgroundColor: '',
+    fontFamily: 'monospace',
+  });
+
+  const updateSettings = (newSettings) => {
+    setSettings((prevSettings) => ({ ...prevSettings, ...newSettings }));
+  };
+
   return (
     <SermonContext.Provider value={{
       selectedSermon,
@@ -78,7 +91,11 @@ const SermonProvider = ({ children }) => {
       error,
       addToSermonsInTab,
       deleteSermonInTab,
-      displaySermonInTab
+      displaySermonInTab,
+      searchTerm,
+      setSearchTerm,
+      settings,
+      updateSettings,
     }}>
       {children}
     </SermonContext.Provider>
