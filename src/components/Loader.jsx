@@ -6,7 +6,7 @@ const Loader = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-4 bg-background">
       <motion.img
-        src="/cloud.png"
+        src="./cloud.png"
         className="h-40 w-40"
         animate={{ rotate: [10, -10, 10] }}
         transition={{ repeat: Infinity, duration: 1 }}

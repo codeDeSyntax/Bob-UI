@@ -25,7 +25,7 @@ const SermonsContent = ({ sermonTextRef }) => {
           ref={sermonTextRef} // Attach the ref to the sermon text div
           className="sermonText w-[100%] font-semibold text-center text-text break-words overflow-hidden font-mono"
           style={{ ...sermonTextStyle, fontFamily: `${settings.fontFamily}`, backgroundColor: `${settings.backgroundColor}`, color: `${settings.textColor}` }}
-          dangerouslySetInnerHTML={{ __html: selectedSermon.sermon }}
+          dangerouslySetInnerHTML={{ __html: '🔊' + selectedSermon.sermon + '🔑'}}
         />
       )}
     </div>

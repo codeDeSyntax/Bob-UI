@@ -10,8 +10,10 @@
   /* text-wrap: wrap; */
   /* overflow-wrap: break-word; */
 }
-.highlight{
-  color:springgreen
+.highlight {
+  color: #00ff00;
+  text-decoration: underline;
+  font-style: oblique;
 }
 
 

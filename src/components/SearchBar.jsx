@@ -12,7 +12,7 @@ const SearchBar = ({ searchText }) => {
 
   return (
     <form onSubmit={handleSearch} className="flex items-center ">
-      <div className="relative w-64 h-12">
+      <div className="relative w-[18rem] h-12">
         <input
           type="text"
           placeholder="Search..."

@@ -121,27 +121,32 @@ const Home = () => {
     >
       <header className="bg-background text-text fixed top-0 left-0 right-0 z-10">
         <div className="flex items-center space-x-4 p-3 justify-between">
+         {
+          activeTab ==='Sermons' ?
           <div className="flex items-center justify-center gap-4">
-            <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
-              <FaBook
-                size={22}
-                className="text-text hover:cursor-pointer"
-                onClick={() => {
-                  setActiveTab('Sermons');
-                  setIsSidebarVisible((prev) => !prev);
-                }}
-              />
-            </div>
-            <div
-              className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer"
-              onClick={sortByTitle}
-            >
-              <FaSort size={22} />
-            </div>
-            <TitleDrop />
-            <YearDrop />
-            <SearchBar searchText={searchText}/>
+          <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
+            <FaBook
+            title='open sideBar/Sermon'
+              size={22}
+              className="text-text hover:cursor-pointer"
+              onClick={() => {
+                setActiveTab('Sermons');
+                setIsSidebarVisible((prev) => !prev);
+              }}
+            />
           </div>
+          <div
+            className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer"
+            onClick={sortByTitle}
+          >
+            <FaSort size={22} title='sort'/>
+          </div>
+          <TitleDrop title='sort by title'/>
+          <YearDrop title='sort by year'/>
+          <SearchBar searchText={searchText}/>
+        </div>:
+        ''
+         }
           <div className="flex items-center justify-center gap-8 pr-10">
             <motion.div
               className="cursor-pointer"
@@ -151,7 +156,7 @@ const Home = () => {
               onClick={() => setActiveTab('Home')}
             >
               <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
-                <FaHome size={22} />
+                <FaHome size={22} title='Home'/>
               </div>
             </motion.div>
             <motion.div
@@ -164,7 +169,7 @@ const Home = () => {
                 setIsSidebarVisible((prev) => !prev);
               }}
             >
-              <FaBook size={22} />
+              <FaBook size={22} title='open sermon/sidebar'/>
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
@@ -173,7 +178,7 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Videos')}
             >
-              <FaVideo size={22} />
+              <FaVideo size={22} title='media'/>
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
@@ -182,7 +187,7 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Settings')}
             >
-              <FaCog size={22} className='animate-spin'/>
+              <FaCog size={22} className='animate-spin' title='settings'/>
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
@@ -191,7 +196,7 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Songs')}
             >
-              <FaMusic size={22} />
+              {/* <FaMusic size={22} aria-disabled/> */}
             </motion.div>
           </div>
         </div>

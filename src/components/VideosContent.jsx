@@ -6,31 +6,29 @@ import { motion } from 'framer-motion';
 
 const images = [
   // Replace with your image URLs
-  '/gallery/eagle6.jpeg',
-  '/gallery/eagle1.jpeg',
-  '/gallery/eagle2.jpeg',
-  '/gallery/branham.jpeg',
-  '/gallery/eagle7.jpeg',
-  '/gallery/lamb1.jpeg',
-  '/gallery/moon1.jpeg',
-  '/gallery/splash.jpeg',
-  '/gallery/moon2.jpeg',
-  '/gallery/eagle5.jpeg',
-  '/gallery/lamb1.jpeg',
-  '/gallery/lamb.jpeg',
-  '/broBob.png',
-  '/gallery/moon2.jpeg',
-  '/gallery/lamb2.jpeg',
-  '/gallery/splash.jpeg',
-  '/gallery/wmb.jpeg',
-  '/gallery/vog.jpeg',
-  '/gallery/hno.jpeg',
-  '/gallery/brick.jpeg',
+  './gallery/eagle6.jpeg',
+  './gallery/eagle1.jpeg',
+  './gallery/eagle2.jpeg',
+  './gallery/branham.jpeg',
+  './gallery/eagle7.jpeg',
+  './gallery/lamb1.jpeg',
+  './gallery/moon1.jpeg',
+  './gallery/splash.jpeg',
+  './gallery/moon2.jpeg',
+  './gallery/eagle5.jpeg',
+  './gallery/lamb1.jpeg',
+  './gallery/lamb.jpeg',
+  './broBob.png',
+  './gallery/moon2.jpeg',
+  './gallery/lamb2.jpeg',
+  './gallery/wmb.jpeg',
+  './gallery/vog.jpeg',
+  './gallery/hno.jpeg',
 ];
 
 const VideosContent = () => {
   return (
-    <div className="flex flex-wrap justify-center p-4 bg-gradient-to-b from-gray-700 to-blue-900 text-white min-h-screen">
+    <div className="flex flex-wrap justify-center p-4 bg-gray-800 text-white min-h-screen">
       {images.map((src, index) => (
         <motion.div
           key={index}
