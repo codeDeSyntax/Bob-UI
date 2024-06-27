@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { SermonContext } from '../components/GlobalState';
-
+import SolarSystem from '../components/Stars'
 const SermonsContent = ({ sermonTextRef }) => {
   const { selectedSermon, settings } = useContext(SermonContext);
 
@@ -15,6 +15,7 @@ const SermonsContent = ({ sermonTextRef }) => {
         {selectedSermon.title}
       </h3>
       <p className="font-mono text-text text-center">{selectedSermon.date}</p>
+      <SolarSystem/>
       {selectedSermon.hasOwnProperty('type') ? (
         <audio controls className="mt-6">
           <source src={selectedSermon.audioUrl} type="audio/mpeg" />

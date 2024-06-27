@@ -23,8 +23,8 @@ const YearDrop = () => {
   const dropdownRef = useRef(null);
 
   const years = [
-    '1963', '1964', '1965', '1966', '1967', '1968',
-    '1969', '1970', '1971', '1972', '1973', '1974'
+     '1964', '1965', '1966', '1967', '1968',
+    '1969', '1970', '1971', '1972', '1973', 
   ];
 
   const toggleDropdown = () => {
@@ -53,7 +53,7 @@ const YearDrop = () => {
     const yearFiltered = sermonCollection.filter((eachSermon) => {
       return eachSermon.year === year;
     });
-    
+
     setFilteredSermons(yearFiltered);
     setDropdownOpen(false); // Close the dropdown after filtering
   };

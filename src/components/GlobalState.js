@@ -50,7 +50,7 @@ const SermonProvider = ({ children }) => {
 
   const addToSermonsInTab = (sermon) => {
     setSermonsInTab((prevSermons) => {
-      if (prevSermons.length >= 8 || prevSermons.find(s => s.id === sermon.id)) {
+      if (prevSermons.length >= 8) {
         alert('This sermon won’t add to tab');
         return prevSermons;
       }

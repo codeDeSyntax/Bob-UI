@@ -209,6 +209,7 @@ const Home = () => {
             </motion.div>
             <video
               autoPlay
+              loop
               className="h-14 w-14 rounded-lg transition duration-300 ease-in-out transform 
               hover:scale-[9] hover:shadow-lg
               hover:translate-y-[25vh] hover:translate-x-[30%]

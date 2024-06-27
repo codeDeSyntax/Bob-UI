@@ -10,7 +10,7 @@ export default function App() {
     // Simulate an API call or resource loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000); // 2 seconds delay
+    },6000); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
