@@ -13,14 +13,20 @@ import {
   FaBook,
   FaVideo,
   FaCog,
-  FaMusic,
   FaTimes,
   FaSort,
 } from 'react-icons/fa';
 import TitleDrop from './TitleDrop';
 import SermonList from './SermonList';
+import TourComponent from '../components/Tour.js';
 
 const Home = () => {
+  const [runTour, setRunTour] = useState(false);
+
+  const startTour = () => {
+    setRunTour(true);
+  };
+
   const {
     selectedSermon,
     sermonsInTab,
@@ -38,7 +44,7 @@ const Home = () => {
       case 'Home':
         return <HomeContent />;
       case 'Sermons':
-        return <SermonsContent sermonTextRef={sermonTextRef}/>;
+        return <SermonsContent sermonTextRef={sermonTextRef} />;
       case 'Videos':
         return <VideosContent />;
       case 'Settings':
@@ -99,7 +105,10 @@ const Home = () => {
         // Scroll to the first highlighted text
         const highlightElement = document.querySelector('.highlight');
         if (highlightElement) {
-          highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          highlightElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          });
         }
       } else {
         // Reset scroll position if no match is found
@@ -121,32 +130,33 @@ const Home = () => {
     >
       <header className="bg-background text-text fixed top-0 left-0 right-0 z-10">
         <div className="flex items-center space-x-4 p-3 justify-between">
-         {
-          activeTab ==='Sermons' ?
-          <div className="flex items-center justify-center gap-4">
-          <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
-            <FaBook
-            title='open sideBar/Sermon'
-              size={22}
-              className="text-text hover:cursor-pointer"
-              onClick={() => {
-                setActiveTab('Sermons');
-                setIsSidebarVisible((prev) => !prev);
-              }}
-            />
-          </div>
-          <div
-            className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer"
-            onClick={sortByTitle}
-          >
-            <FaSort size={22} title='sort'/>
-          </div>
-          <TitleDrop title='sort by title'/>
-          <YearDrop title='sort by year'/>
-          <SearchBar searchText={searchText}/>
-        </div>:
-        ''
-         }
+          {activeTab === 'Sermons' ? (
+            <div className="flex items-center justify-center gap-4">
+              <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
+                <FaBook
+                  id="Sermons1"
+                  title="open sideBar/Sermon "
+                  size={22}
+                  className="text-text hover:cursor-pointer"
+                  onClick={() => {
+                    setActiveTab('Sermons');
+                    setIsSidebarVisible((prev) => !prev);
+                  }}
+                />
+              </div>
+              <div
+                className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer"
+                onClick={sortByTitle}
+              >
+                <FaSort size={22} title="sort" id="sort" />
+              </div>
+              <TitleDrop title="sort by title" id="title" />
+              <YearDrop title="sort by year" id="year" />
+              <SearchBar searchText={searchText} id="search" />
+            </div>
+          ) : (
+            ''
+          )}
           <div className="flex items-center justify-center gap-8 pr-10">
             <motion.div
               className="cursor-pointer"
@@ -155,8 +165,11 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Home')}
             >
-              <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
-                <FaHome size={22} title='Home'/>
+              <div
+                className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
+                id="home"
+              >
+                <FaHome size={22} title="home" />
               </div>
             </motion.div>
             <motion.div
@@ -169,7 +182,7 @@ const Home = () => {
                 setIsSidebarVisible((prev) => !prev);
               }}
             >
-              <FaBook size={22} title='open sermon/sidebar'/>
+              <FaBook size={22} title="open sermon/sidebar" id="Sermons" />
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
@@ -178,7 +191,7 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Videos')}
             >
-              <FaVideo size={22} title='media'/>
+              <FaVideo size={22} title="media" id="media" />
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
@@ -187,17 +200,34 @@ const Home = () => {
               whileTap="tap"
               onClick={() => setActiveTab('Settings')}
             >
-              <FaCog size={22} className='animate-spin' title='settings'/>
+              <FaCog
+                size={22}
+                className="animate-spin"
+                title="settings"
+                id="settings"
+              />
             </motion.div>
-            <motion.div
-              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
-              variants={iconVariants}
-              whileHover="hover"
-              whileTap="tap"
-              onClick={() => setActiveTab('Songs')}
+            <video
+              autoPlay
+              className="h-14 w-14 rounded-lg transition duration-300 ease-in-out transform 
+              hover:scale-[9] hover:shadow-lg
+              hover:translate-y-[25vh] hover:translate-x-[30%]
+              focus:scale-[1.2] focus:shadow-lg
+              focus:-translate-y-[18vh] focus:translate-x-[20%]"
             >
-              {/* <FaMusic size={22} aria-disabled/> */}
-            </motion.div>
+              <source src="./vid.webm" type="video/webm" className='rounded-lg'/>
+            </video>
+            {activeTab === 'Sermons' ? (
+              <button
+                onClick={startTour}
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              >
+                Start Tour
+              </button>
+            ) : (
+              ''
+            )}
+            <TourComponent runTour={runTour} setRunTour={setRunTour} />
           </div>
         </div>
         {activeTab === 'Sermons' ? (

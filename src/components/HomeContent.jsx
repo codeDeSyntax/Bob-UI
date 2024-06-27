@@ -32,6 +32,7 @@ const HomeContent = () => {
         <hr className="border-text mx-40 mt-20" />
         <p className="text-textBlue text-2xl">Rev 10:1-3</p>
       </div>
+      
       <div class="air air1">
         <FaFish className="size-10 fish text-[pink]" />
       </div>

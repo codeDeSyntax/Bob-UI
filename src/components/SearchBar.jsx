@@ -11,10 +11,11 @@ const SearchBar = ({ searchText }) => {
   };
 
   return (
-    <form onSubmit={handleSearch} className="flex items-center ">
+    <form onSubmit={handleSearch} className="flex items-center " id='search'>
       <div className="relative w-[18rem] h-12">
         <input
           type="text"
+          spellCheck="false"
           placeholder="Search..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
