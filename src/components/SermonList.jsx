@@ -5,17 +5,18 @@ import { FaArrowRight } from 'react-icons/fa';
 // import TitleDrop from './TitleDrop';
 
 const SermonList = ({ setIsSidebarVisible }) => {
-  const { allSermons, setSelectedSermon, addToSermonsInTab } = useContext(SermonContext);
+  const { allSermons, setSelectedSermon, addToSermonsInTab } =
+    useContext(SermonContext);
 
   const handleSermonClick = (sermon) => {
     setSelectedSermon(sermon);
     addToSermonsInTab(sermon);
     setIsSidebarVisible(true);
-  }
+  };
 
   return (
-    <div className='' >
-       {/* <div className="">
+    <div className="sermonList">
+      {/* <div className="">
        <YearDrop/>
        <TitleDrop/>
        </div> */}
@@ -24,16 +25,17 @@ const SermonList = ({ setIsSidebarVisible }) => {
           <li
             key={index}
             onClick={() => handleSermonClick(sermon)}
-            className={`w-full flex items-center justify-between group ${
+            className={`w-full z-50 flex items-center justify-between group hover:cursor-pointer hover:bg-gray-800 ${
               index % 2 === 0 ? 'bg-[#3d4043]' : 'bg-[#303336]'
             }`}
           >
             <div className="p-2">
               <p className="text-[.8rem] text-text">{sermon.title}</p>
-              <p className="text-[.6rem] text-textBlue font-mono">
-                {sermon.date}{sermon.hasOwnProperty('type') ? ' - 🔊' : ''}
+              <p className="text-[.6rem] text-[#2596ee] font-mono">
+                {sermon.date}
+                {sermon.hasOwnProperty('type') ? ' - 🔊' : ''}
               </p>
-              <p className="text-[.5rem]">{sermon.location}</p>
+              <p className="text-[.5rem] text-text">{sermon.location}</p>
             </div>
             <FaArrowRight className="text-text opacity-0 mr-2 group-hover:opacity-100 duration-500" />
           </li>

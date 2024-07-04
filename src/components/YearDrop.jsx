@@ -67,7 +67,7 @@ const YearDrop = () => {
     <div className="relative z-40 inline-block text-left" ref={dropdownRef} id='year'>
       <button
         onClick={toggleDropdown}
-        className="text-white bg-blue-600 focus:ring-4 shadow-sm focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center"
+        className="text-[white] bg-[#2563eb] focus:ring-4 shadow-sm focus:outline-none focus:ring-[white] font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center"
         type="button"
       >
         Year
@@ -83,13 +83,13 @@ const YearDrop = () => {
       </button>
 
       {dropdownOpen && (
-        <div className="z-50 absolute left-20 p-4 mt-2 bg-gray-800 rounded-lg shadow w-96">
+        <div className="z-50 absolute left-[4rem] p-4 mt-4 bg-background shadow-text rounded-lg shadow w-96">
           <div className="grid grid-cols-5 gap-1 py-2 text-sm text-gray-200">
             {years.map((year) => (
               <div
                 onClick={filterByYear}
                 key={year}
-                className="h-6 w-14 text-center flex items-center justify-center px-2 py-2 bg-gray-700 rounded cursor-pointer"
+                className="h-6 w-14 text-text text-center flex items-center justify-center px-2 py-2 bg-[#1f2937] rounded cursor-pointer"
               >
                 {year}
               </div>

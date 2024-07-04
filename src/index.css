@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.sermonText{
-  font-family:monospace;
-  padding:20px;
-  text-align:center;
-  font-weight:600;
+.sermonText {
+  font-family: monospace;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
   /* text-wrap: wrap; */
   /* overflow-wrap: break-word; */
 }
@@ -15,7 +15,6 @@
   text-decoration: underline;
   font-style: oblique;
 }
-
 
 .settings-container {
   display: flex;
@@ -26,7 +25,6 @@
   border-radius: 8px;
   min-height: 100vh;
 }
-
 
 .icon-circle {
   width: 100px;
@@ -49,31 +47,39 @@
 .setting-item label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
-}
-/* Width of the scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
+  font-weight: bold;}
 
-/* Track of the scrollbar */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px; /* Adjusted for rounded corners */
-  background-color: #8c8c8c;
-}
+  /* body, html {
+    overflow: hidden;
+  } */
+  .sem::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px; /* Adjusted for rounded corners */
+    background-color: #8c8c8c;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #22272a;
+    border-radius: 10px; /* Adjusted for round thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #40aae2;
+  }
+  
 
-/* Thumb of the scrollbar */
-::-webkit-scrollbar-thumb {
-  background: #22272a;
-  border-radius: 10px; /* Adjusted for round thumb */
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 200px;
+  height: 25px;
 }
-
-/* Thumb on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #40aae2;
-}
-
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

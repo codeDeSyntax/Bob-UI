@@ -6,7 +6,7 @@ import { FaFish } from 'react-icons/fa';
 const HomeContent = () => {
   return (
     <section>
-      <div className="relative  text-center text-white p-4 mt-[8rem] rounded">
+      <div className="relative text-center text-white p-4 mt-[8rem] rounded">
         <h2 className="text-3xl mb-4 text-text font-serif italic font-medium">
           The Son of Man Recordings ...
         </h2>
@@ -30,17 +30,18 @@ const HomeContent = () => {
             cried, seven thunders uttered their voices.
           </p>
         </div>
+
         <hr className="border-text mx-40 mt-20" />
         <p className="text-textBlue text-2xl">Rev 10:1-3</p>
       </div>
-     
-      <div class="air air1">
+
+      <div className="air air1">
         <FaFish className="size-10 fish text-[pink]" />
       </div>
-      <div class="air air2"></div>
+      <div className="air air2"></div>
 
-      <div class="air air3"></div>
-      <div class="air air4"></div>
+      <div className="air air3"></div>
+      <div className="air air4"></div>
     </section>
   );
 };

@@ -31,8 +31,9 @@ const SolarSystemContainer = styled.div`
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: transparent ;
+  background: ;
   overflow: hidden;
+  pointer-events: none;
 `;
 
 const SolarSystem = () => {

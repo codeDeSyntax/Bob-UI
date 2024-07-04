@@ -83,27 +83,42 @@ const Home = () => {
   );
 
   const searchText = (searchTerm) => {
-    const input = searchTerm.trim().toLowerCase();
+    const input = searchTerm.trim().toLowerCase().replace(/[^\w\s]/g, '');
     const paragraph = sermonTextRef.current;
-    const text = paragraph.innerText;
-
+    const text = paragraph.innerText.toLowerCase().replace(/[^\w\s]/g, '');
+  
     // Remove previous highlights
-    paragraph.innerHTML = text;
-
+    paragraph.innerHTML = paragraph.innerText;
+  
     if (input.length > 0) {
-      const escapedInput = escapeRegExp(input);
-      const regex = new RegExp(`(${escapedInput})`, 'gi');
-      const matches = [...text.matchAll(regex)];
-
-      if (matches.length > 0) {
-        let highlightedText = text.replace(
-          regex,
-          '<span class="highlight">$1</span>'
-        );
+      const inputRegex = input.split(/\s+/).join('\\s*');
+      const regex = new RegExp(inputRegex, 'gi');
+      const matches = text.match(regex);
+  
+      if (matches) {
+        let highlightedText = paragraph.innerHTML;
+  
+        matches.forEach((match) => {
+          // Create a regex for the original match in the paragraph with punctuation and spaces
+          const originalMatchRegex = new RegExp(
+            match.split('').join('[^\\w\\s]*'),
+            'i'
+          );
+          const originalMatchArray = paragraph.innerText.match(originalMatchRegex);
+  
+          if (originalMatchArray) {
+            const originalMatch = originalMatchArray[0];
+            highlightedText = highlightedText.replace(
+              new RegExp(originalMatch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'),
+              `<span class="highlight">$&</span>`
+            );
+          }
+        });
+  
         paragraph.innerHTML = highlightedText;
-
+  
         // Scroll to the first highlighted text
-        const highlightElement = document.querySelector('.highlight');
+        const highlightElement = paragraph.querySelector('.highlight');
         if (highlightElement) {
           highlightElement.scrollIntoView({
             behavior: 'smooth',
@@ -116,23 +131,22 @@ const Home = () => {
       }
     }
   };
-
-  const escapeRegExp = (string) => {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
-  };
+  
+  
+  
 
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col min-h-screen"
+      className="flex flex-col min-h-screen overflow-hidden home"
     >
       <header className="bg-background text-text fixed top-0 left-0 right-0 z-10">
         <div className="flex items-center space-x-4 p-3 justify-between">
           {activeTab === 'Sermons' ? (
             <div className="flex items-center justify-center gap-4">
-              <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800">
+              <div className="h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]">
                 <FaBook
                   id="Sermons1"
                   title="open sideBar/Sermon "
@@ -145,7 +159,7 @@ const Home = () => {
                 />
               </div>
               <div
-                className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer"
+                className="h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937] cursor-pointer"
                 onClick={sortByTitle}
               >
                 <FaSort size={22} title="sort" id="sort" />
@@ -166,14 +180,14 @@ const Home = () => {
               onClick={() => setActiveTab('Home')}
             >
               <div
-                className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
+                className="h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]"
                 id="home"
               >
                 <FaHome size={22} title="home" />
               </div>
             </motion.div>
             <motion.div
-              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
@@ -185,7 +199,7 @@ const Home = () => {
               <FaBook size={22} title="open sermon/sidebar" id="Sermons" />
             </motion.div>
             <motion.div
-              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
@@ -194,7 +208,7 @@ const Home = () => {
               <FaVideo size={22} title="media" id="media" />
             </motion.div>
             <motion.div
-              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-gray-800"
+              className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]"
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
@@ -210,18 +224,22 @@ const Home = () => {
             <video
               autoPlay
               loop
-              className="h-14 w-14 rounded-lg transition duration-300 ease-in-out transform 
+              className="h-14 w-14 rounded-lg transition duration-300 ease-in-out transform
               hover:scale-[9] hover:shadow-lg
               hover:translate-y-[25vh] hover:translate-x-[30%]
               focus:scale-[1.2] focus:shadow-lg
               focus:-translate-y-[18vh] focus:translate-x-[20%]"
             >
-              <source src="./vid.webm" type="video/webm" className='rounded-lg'/>
+              <source
+                src="./vid.webm"
+                type="video/webm"
+                className="rounded-lg"
+              />
             </video>
             {activeTab === 'Sermons' ? (
               <button
                 onClick={startTour}
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                className="bg-button hover:bg-button text-[white] font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               >
                 Start Tour
               </button>
@@ -264,7 +282,7 @@ const Home = () => {
           ''
         )}
       </header>
-      <div className="flex  pt-16">
+      <div className="flex pt-16">
         <AnimatePresence>
           {!isSidebarVisible && activeTab === 'Sermons' && (
             <motion.aside
@@ -279,7 +297,7 @@ const Home = () => {
           )}
         </AnimatePresence>
         <main
-          className={` flex flex-col overflow-y-auto overflow-x-hidden ${
+          className={`w-[100vw] flex flex-col ${
             isSidebarVisible && activeTab === 'Sermons' ? '' : ''
           }`}
           style={{
@@ -289,7 +307,7 @@ const Home = () => {
             backgroundPosition: 'center',
           }}
         >
-          <div className="">{renderContent()}</div>
+          <div className="scroll">{renderContent()}</div>
         </main>
       </div>
     </motion.div>

@@ -70,7 +70,7 @@ const SermonProvider = ({ children }) => {
 
 
   const [settings, setSettings] = useState({
-    textSize: '3',
+    textSize: '1',
     textColor: '',
     backgroundColor: '',
     fontFamily: 'monospace',

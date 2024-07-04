@@ -18,6 +18,7 @@ export default function App() {
   if (isLoading) {
     return <Loader />;
   }
+ 
 
   return (
     <SermonProvider>
