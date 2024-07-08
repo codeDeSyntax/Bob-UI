@@ -38,11 +38,11 @@ const SermonsContent = ({ sermonTextRef }) => {
             backgroundColor: `${settings.backgroundColor}`,
             color: `${settings.textColor}`,
           }}
-        
-            
+
+
         >
            🔊 {selectedSermon.sermon} 🔑
-          
+
         </div>
       )}
     </div>

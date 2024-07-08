@@ -1,6 +1,6 @@
 const audioSermons = [
   {
-    audNum:'1m',
+    id:'1m',
     title: "Be Unified",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/be-unified/',
@@ -8,7 +8,7 @@ const audioSermons = [
     date: "November-5-1970",
   },
   {
-    audNum:'2m',
+    id:'2m',
     title: "A Chosen Spot (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-chosen-spot-part-1/',
@@ -16,7 +16,7 @@ const audioSermons = [
     date: "January-7-1973",
   },
   {
-    audNum:'3m',
+    id:'3m',
     title: "A Chosen Spot (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-chosen-spot-part-2/',
@@ -24,7 +24,7 @@ const audioSermons = [
     date: "January-7-1973",
   },
   {
-    audNum:'4m',
+    id:'4m',
     title: "A Cross To Bear",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-cross-to-bear/',
@@ -32,7 +32,7 @@ const audioSermons = [
     date: "April-19-1964",
   },
   {
-    audNum:'5m',
+    id:'5m',
     title: "A Drink From The Well Of Bethleham",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-drink-from-the-well-of-bethleham/',
@@ -40,7 +40,7 @@ const audioSermons = [
     date: "December-21-1969",
   },
   {
-    audNum:'6m',
+    id:'6m',
     title: "A Dwelling Place For God",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-dwelling-place-for-god/',
@@ -48,7 +48,7 @@ const audioSermons = [
     date: "October-18-1964",
   },
   {
-    audNum:'7m',
+    id:'7m',
     title: "A Purpose To Stand (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-purpose-to-stand-part-1/',
@@ -56,7 +56,7 @@ const audioSermons = [
     date: "September-28-1969",
   },
   {
-    audNum:'8m',
+    id:'8m',
     title: "A Purpose To Stand (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-purpose-to-stand-part-2/',
@@ -64,7 +64,7 @@ const audioSermons = [
     date: "September-28-1969",
   },
   {
-    audNum:'9m',
+    id:'9m',
     title: "A Resting Place For The Ark (Part 1)",
     type: "mp3",
     audioUrl:'',
@@ -72,7 +72,7 @@ const audioSermons = [
     date: "December-8-1968",
   },
   {
-    audNum:'10m',
+    id:'10m',
     title: "A Resting Place For The Ark (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-resting-place-for-the-ark-part-1/',
@@ -80,7 +80,7 @@ const audioSermons = [
     date: "December-8-1968",
   },
   {
-    audNum:'11m',
+    id:'11m',
     title: "A Spiritual Race",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/a-spiritual-race/',
@@ -88,7 +88,7 @@ const audioSermons = [
     date: "October-11-1964",
   },
   {
-    audNum:'12m',
+    id:'12m',
     title: "Abel's Sacrifice",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/abels-sacrifice/',
@@ -96,7 +96,7 @@ const audioSermons = [
     date: "March-9-1969",
   },
   {
-    audNum:'13m',
+    id:'13m',
     title: "Abraham And Lot (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/abraham-and-lot-part-1/',
@@ -104,7 +104,7 @@ const audioSermons = [
     date: "August-11-1968",
   },
   {
-    audNum:'14m',
+    id:'14m',
     title: "Abraham And Lot (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/abraham-and-lot-part-2/',
@@ -112,7 +112,7 @@ const audioSermons = [
     date: "August-11-1968",
   },
   {
-    audNum:'15m',
+    id:'15m',
     title: "Abraham Royal Seed In The Journey (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/abraham-royal-seed-in-the-journey-part-1/',
@@ -120,7 +120,7 @@ const audioSermons = [
     date: "August-18-1968",
   },
   {
-    audNum:'16m',
+    id:'16m',
     title: "Abraham Royal Seed In The Journey (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/all-willing-to-pay-the-price-part-2/',
@@ -128,7 +128,7 @@ const audioSermons = [
     date: "August-18-1968",
   },
   {
-    audNum:'17m',
+    id:'17m',
     title: "All Willing To Pay The Price (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/all-willing-to-pay-the-price-part-1/',
@@ -136,7 +136,7 @@ const audioSermons = [
     date: "October-4-1970",
   },
   {
-    audNum:'18m',
+    id:'18m',
     title: "All Willing To Pay The Price (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/all-willing-to-pay-the-price-part-2/',
@@ -144,7 +144,7 @@ const audioSermons = [
     date: "October-4-1970",
   },
   {
-    audNum:'19m',
+    id:'19m',
     title: "An Open Door",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/an-open-door/',
@@ -152,7 +152,7 @@ const audioSermons = [
     date: "May-19-1968",
   },
   {
-    audNum:'20m',
+    id:'20m',
     title: "An Open Door (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/an-open-door-part-1/',
@@ -160,7 +160,7 @@ const audioSermons = [
     date: "May-16-1971",
   },
   {
-    audNum:'21m',
+    id:'21m',
     title: "An Open Door (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/an-open-door-part-2/',
@@ -168,7 +168,7 @@ const audioSermons = [
     date: "May-16-1971",
   },
   {
-    audNum:'22m',
+    id:'22m',
     title: "An Uncertain Sound",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/an-uncertain-sound/',
@@ -176,7 +176,7 @@ const audioSermons = [
     date: "October-29-1970",
   },
   {
-    audNum:'23m',
+    id:'23m',
     title: "And Israel Abode At Kadesh",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/and-israel-abode-at-kadesh/',
@@ -184,7 +184,7 @@ const audioSermons = [
     date: "August-14-1969",
   },
   {
-    audNum:'24m',
+    id:'24m',
     title: "Apostasy (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/apostasy-part-1/',
@@ -192,7 +192,7 @@ const audioSermons = [
     date: "March-23-1969",
   },
   {
-    audNum:'25m',
+    id:'25m',
     title: "Apostasy (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/apostasy-part-2/',
@@ -200,7 +200,7 @@ const audioSermons = [
     date: "March-23-1969",
   },
   {
-    audNum:'26m',
+    id:'26m',
     title: "Attraction In The Bride (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/attraction-in-the-bride-part-1/',
@@ -208,7 +208,7 @@ const audioSermons = [
     date: "November-9-1969",
   },
   {
-    audNum:'27m',
+    id:'27m',
     title: "Attraction In The Bride (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/attraction-in-the-bride-part-2/',
@@ -216,7 +216,7 @@ const audioSermons = [
     date: "November-9-1969",
   },
   {
-    audNum:'28m',
+    id:'28m',
     title: "Awakening Gods Children",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/awakening-gods-children/',
@@ -224,7 +224,7 @@ const audioSermons = [
     date: "April-29-1973",
   },
   {
-    audNum:'29m',
+    id:'29m',
     title: "Baptism Of The Holy Ghost In Relation To The New Birth (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/baptism-of-the-holy-ghost-in-relation-to-the-new-birth-part-1/',
@@ -232,7 +232,7 @@ const audioSermons = [
     date: "August-29-1971",
   },
   {
-    audNum:'30m',
+    id:'30m',
     title: "Baptism Of The Holy Ghost In Relation To The New Birth (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/baptism-of-the-holy-ghost-in-relation-to-the-new-birth-part-2/',
@@ -240,7 +240,7 @@ const audioSermons = [
     date: "August-29-1971",
   },
   {
-    audNum:'31m',
+    id:'31m',
     title: "Beatitudes",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/beatitudes/',
@@ -248,7 +248,7 @@ const audioSermons = [
     date: "October-1-1972",
   },
   {
-    audNum:'32m',
+    id:'32m',
     title: "Beginning Of Sorrows (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/beginning-of-sorrows-part-1/',
@@ -256,7 +256,7 @@ const audioSermons = [
     date: "October-11-1970",
   },
   {
-    audNum:'33m',
+    id:'33m',
     title: "Beginning Of Sorrows (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/beginning-of-sorrows-part-2/',
@@ -264,7 +264,7 @@ const audioSermons = [
     date: "October-11-1970",
   },
   {
-    audNum:'34m',
+    id:'34m',
     title: "Being Subject",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/being-subject/',
@@ -272,7 +272,7 @@ const audioSermons = [
     date: "April-14-1965",
   },
   {
-    audNum:'35m',
+    id:'35m',
     title: "Believing In Christ",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/believing-in-christ/',
@@ -280,7 +280,7 @@ const audioSermons = [
     date: "January-17-1971",
   },
   {
-    audNum:'36m',
+    id:'36m',
     title: "Bible Prophecy #1 (Rev. 13)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bible-prophecy-1-rev-13/',
@@ -288,7 +288,7 @@ const audioSermons = [
     date: "May-27-1973",
   },
   {
-    audNum:'37m',
+    id:'37m',
     title: "Bible Prophecy #2 (Rev.)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bible-prophecy-2-rev/',
@@ -296,7 +296,7 @@ const audioSermons = [
     date: "May-27-1973",
   },
   {
-    audNum:'38m',
+    id:'38m',
     title: "Bible Prophecy #3 (Red Dragon)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bible-prophecy-3-red-dragon/',
@@ -304,7 +304,7 @@ const audioSermons = [
     date: "June-3-1973",
   },
   {
-    audNum:'39m',
+    id:'39m',
     title: "Bible Prophecy #4 (70 WK)",
     type: "mp3",
     audioUrl:'',
@@ -312,7 +312,7 @@ const audioSermons = [
     date: "June-10-1973",
   },
   {
-    audNum:'40m',
+    id:'40m',
     title: "Bible Prophecy #5 (Two Witnesses)",
     type: "mp3",
     audioUrl:'',
@@ -320,7 +320,7 @@ const audioSermons = [
     date: "June-10-1973",
   },
   {
-    audNum:'41m',
+    id:'41m',
     title: "Bible Prophecy #6 (USA)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bible-prophecy-4-70-wk/',
@@ -328,7 +328,7 @@ const audioSermons = [
     date: "July-11-1973",
   },
   {
-    audNum:'42m',
+    id:'42m',
     title: "Birthright",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/birthright/',
@@ -336,7 +336,7 @@ const audioSermons = [
     date: "February-25-1968",
   },
   {
-    audNum:'43m',
+    id:'43m',
     title: "Blind Laodicea (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/blind-laodicea-part-1/',
@@ -344,7 +344,7 @@ const audioSermons = [
     date: "December-8-1968",
   },
   {
-    audNum:'44m',
+    id:'44m',
     title: "Blind Laodicea (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/blind-laodicea-part-2/',
@@ -352,7 +352,7 @@ const audioSermons = [
     date: "December-8-1968",
   },
   {
-    audNum:'45m',
+    id:'45m',
     title: "Bride In The Spirit (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bride-in-the-spirit-part-1/',
@@ -360,7 +360,7 @@ const audioSermons = [
     date: "June-20-1971",
   },
   {
-    audNum:'46m',
+    id:'46m',
     title: "Bride In The Spirit (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bride-in-the-spirit-part-2/',
@@ -368,7 +368,7 @@ const audioSermons = [
     date: "June-20-1971",
   },
   {
-    audNum:'47m',
+    id:'47m',
     title: "Bro. Bob's Jamaica Trip (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bro-bobs-jamaica-trip-part-1/',
@@ -376,7 +376,7 @@ const audioSermons = [
     date: "March-6-1969",
   },
   {
-    audNum:'48m',
+    id:'48m',
     title: "Bro. Bob's Jamaica Trip (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bro-bobs-jamaica-trip-part-2/',
@@ -384,7 +384,7 @@ const audioSermons = [
     date: "March-6-1969",
   },
   {
-    audNum:'49m',
+    id:'49m',
     title: "Bro. Bob's-Robert Lee Lambert's Testimony (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bro-bobs-robert-lee-lamberts-testimony-part-1/',
@@ -392,7 +392,7 @@ const audioSermons = [
     date: "January-26-1969",
   },
   {
-    audNum:'50m',
+    id:'50m',
     title: "Bro. Bob's-Robert Lee Lambert's Testimony (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bro-bobs-robert-lee-lamberts-testimony-part-2/',
@@ -400,7 +400,7 @@ const audioSermons = [
     date: "January-26-1969",
   },
   {
-    audNum:'51m',
+    id:'51m',
     title: "Bro. Branham's Heavenly Vision",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bro-branhams-heavenly-vision/',
@@ -408,7 +408,7 @@ const audioSermons = [
     date: "August-6-1970",
   },
   {
-    audNum:'52m',
+    id:'52m',
     title: "Bro. Robert Lambert's Funeral",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/bro-robert-lamberts-funeral/',
@@ -416,7 +416,7 @@ const audioSermons = [
     date: "August-6-1973",
   },
   {
-    audNum:'53m',
+    id:'53m',
     title: "Broken Fellowship",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/broken-fellowship/',
@@ -424,7 +424,7 @@ const audioSermons = [
     date: "April-30-1967",
   },
   {
-    audNum:'54m',
+    id:'54m',
     title: "Broken Fellowship (New York)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/broken-fellowship-new-york/',
@@ -432,7 +432,7 @@ const audioSermons = [
     date: "October-21-1964",
   },
   {
-    audNum:'55m',
+    id:'55m',
     title: "Building On A Rock",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/building-on-a-rock/',
@@ -440,7 +440,7 @@ const audioSermons = [
     date: "May-14-1970",
   },
   {
-    audNum:'56m',
+    id:'56m',
     title: "Building On Temple Of God (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/building-on-temple-of-god-part-1/',
@@ -448,7 +448,7 @@ const audioSermons = [
     date: "February-15-1970",
   },
   {
-    audNum:'57m',
+    id:'57m',
     title: "Building On Temple Of God (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/building-on-temple-of-god-part-2/',
@@ -456,7 +456,7 @@ const audioSermons = [
     date: "February-15-1970",
   },
   {
-    audNum:'58m',
+    id:'58m',
     title: "By Faith Noah (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/by-faith-noah-part-1/',
@@ -464,7 +464,7 @@ const audioSermons = [
     date: "February-13-1972",
   },
   {
-    audNum:'59m',
+    id:'59m',
     title: "By Faith Noah (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/by-faith-noah-part-2/',
@@ -472,7 +472,7 @@ const audioSermons = [
     date: "February-13-1972",
   },
   {
-    audNum:'60m',
+    id:'60m',
     title: "Calling Upon The Lord To Be Saved (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/calling-upon-the-lord-to-be-saved-part-1/',
@@ -480,7 +480,7 @@ const audioSermons = [
     date: "September-12-1971",
   },
   {
-    audNum:'61m',
+    id:'61m',
     title: "Calling Upon The Lord To Be Saved (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/calling-upon-the-lord-to-be-saved-part-2/',
@@ -488,7 +488,7 @@ const audioSermons = [
     date: "September-12-1971",
   },
   {
-    audNum:'62m',
+    id:'62m',
     title: "Cast Away Your Old Garment",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/cast-away-your-old-garment/',
@@ -496,7 +496,7 @@ const audioSermons = [
     date: "February-2-1969",
   },
   {
-    audNum:'63m',
+    id:'63m',
     title: "Cause Of Wrath Of GOD Today (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/cause-of-wrath-of-god-today-part-1/',
@@ -504,7 +504,7 @@ const audioSermons = [
     date: "September-19-1971",
   },
   {
-    audNum:'64m',
+    id:'64m',
     title: "Cause Of Wrath Of GOD Today (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/cause-of-wrath-of-god-today-part-2/',
@@ -512,7 +512,7 @@ const audioSermons = [
     date: "September-19-1971",
   },
   {
-    audNum:'65m',
+    id:'65m',
     title: "Children Of Disobedience (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/children-of-disobedience-part-1/',
@@ -520,7 +520,7 @@ const audioSermons = [
     date: "March-15-1970",
   },
   {
-    audNum:'66m',
+    id:'66m',
     title: "Children Of Disobedience (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/children-of-disobedience-part-2/',
@@ -528,7 +528,7 @@ const audioSermons = [
     date: "March-15-1970",
   },
   {
-    audNum:'67m',
+    id:'67m',
     title: "Church Age Book (Message To The Church)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/church-age-book-message-to-the-church/',
@@ -536,7 +536,7 @@ const audioSermons = [
     date: "May-28-1970",
   },
   {
-    audNum:'68m',
+    id:'68m',
     title: "Coming Of Christ",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/coming-of-christ/',
@@ -544,7 +544,7 @@ const audioSermons = [
     date: "June-9-1968",
   },
   {
-    audNum:'69m',
+    id:'69m',
     title: "Communion",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/communion/',
@@ -552,7 +552,7 @@ const audioSermons = [
     date: "April-9-1972",
   },
   {
-    audNum:'70m',
+    id:'70m',
     title: "Compel Them To Come In",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/compel-them-to-come-in/',
@@ -560,7 +560,7 @@ const audioSermons = [
     date: "September-6-1970",
   },
   {
-    audNum:'71m',
+    id:'71m',
     title: "Conditioning The Heart To Receive Rev.",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/conditioning-the-heart-to-receive-rev/',
@@ -568,7 +568,7 @@ const audioSermons = [
     date: "September-24-1972",
   },
   {
-    audNum:'72m',
+    id:'72m',
     title: "Contend (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/contend-part-1/',
@@ -576,7 +576,7 @@ const audioSermons = [
     date: "November-1-1970",
   },
   {
-    audNum:'73m',
+    id:'73m',
     title: "Contend (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/contend-part-2/',
@@ -584,7 +584,7 @@ const audioSermons = [
     date: "November-1-1970",
   },
   {
-    audNum:'74m',
+    id:'74m',
     title: "Contend For The Faith",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/contend-for-the-faith/',
@@ -592,7 +592,7 @@ const audioSermons = [
     date: "February-13-1972",
   },
   {
-    audNum:'75m',
+    id:'75m',
     title: "Crossing The Jordan",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/crossing-the-jordan/',
@@ -600,7 +600,7 @@ const audioSermons = [
     date: "December-17-1967",
   },
   {
-    audNum:'76m',
+    id:'76m',
     title: "Crucified In The Place Of A Skull",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/crucified-in-the-place-of-a-skull/',
@@ -608,7 +608,7 @@ const audioSermons = [
     date: "February-11-1973",
   },
   {
-    audNum:'77m',
+    id:'77m',
     title: "David's First Love #1",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/deception-of-satan-part-1/',
@@ -616,7 +616,7 @@ const audioSermons = [
     date: "December-25-1966",
   },
   {
-    audNum:'78m',
+    id:'78m',
     title: "David's First Love #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/davids-first-love-2/',
@@ -624,7 +624,7 @@ const audioSermons = [
     date: "December-25-1966",
   },
   {
-    audNum:'79m',
+    id:'79m',
     title: "David's Vision",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/davids-vision/',
@@ -632,7 +632,7 @@ const audioSermons = [
     date: "September-24-1970",
   },
   {
-    audNum:'80m',
+    id:'80m',
     title: "Deception Of Satan (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/deception-of-satan-part-1/',
@@ -640,7 +640,7 @@ const audioSermons = [
     date: "December-26-1968",
   },
   {
-    audNum:'81m',
+    id:'81m',
     title: "Deception Of Satan (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/deception-of-satan-part-2/',
@@ -648,7 +648,7 @@ const audioSermons = [
     date: "December-26-1968",
   },
   {
-    audNum:'82m',
+    id:'82m',
     title: "Deliverance From The Power Of Darkness",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/deliverance-from-the-power-of-darkness/',
@@ -656,7 +656,7 @@ const audioSermons = [
     date: "March-12-1972",
   },
   {
-    audNum:'83m',
+    id:'83m',
     title: "Dreams And Seven Church Ages (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/dreams-and-seven-church-ages-part-1/',
@@ -664,7 +664,7 @@ const audioSermons = [
     date: "October-9-1969",
   },
   {
-    audNum:'84m',
+    id:'84m',
     title: "Dreams And Seven Church Ages (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/dreams-and-seven-church-ages-part-2/',
@@ -672,7 +672,7 @@ const audioSermons = [
     date: "October-9-1969",
   },
   {
-    audNum:'85m',
+    id:'85m',
     title: "Each Step I Take",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/each-step-i-take/',
@@ -680,7 +680,7 @@ const audioSermons = [
     date: "January-28-1968",
   },
   {
-    audNum:'86m',
+    id:'86m',
     title: "Eat, Drink & Be Merry",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/eat-drink-be-merry/',
@@ -688,7 +688,7 @@ const audioSermons = [
     date: "March-7-1971",
   },
   {
-    audNum:'87m',
+    id:'87m',
     title: "Eating All The Lamb",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/eating-all-the-lamb/',
@@ -696,7 +696,7 @@ const audioSermons = [
     date: "July-5-1967",
   },
   {
-    audNum:'88m',
+    id:'88m',
     title: "Elected Lady- Nuggets- Invisible Union (Part 1)",
     type: "mp3",
     audioUrl:'',
@@ -704,7 +704,7 @@ const audioSermons = [
     date: "November-30-1967",
   },
   {
-    audNum:'89m',
+    id:'89m',
     title: "Elected Lady- Nuggets- Invisible Union (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/elected-lady-nuggets-invisible-union-part-2/',
@@ -712,7 +712,7 @@ const audioSermons = [
     date: "November-30-1967",
   },
   {
-    audNum:'90m',
+    id:'90m',
     title: "Election Of Abrahams Royal Seed & Jacob's Ladder",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/election-of-abrahams-royal-seed-jacobs-ladder/',
@@ -720,7 +720,7 @@ const audioSermons = [
     date: "May-21-1972",
   },
   {
-    audNum:'91m',
+    id:'91m',
     title: "Elisha",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/elisha/',
@@ -728,7 +728,7 @@ const audioSermons = [
     date: "May-24-1970",
   },
   {
-    audNum:'92m',
+    id:'92m',
     title: "Empty Vessels (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/empty-vessels-part-1/',
@@ -736,7 +736,7 @@ const audioSermons = [
     date: "October-19-1969",
   },
   {
-    audNum:'93m',
+    id:'93m',
     title: "Empty Vessels (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/empty-vessels-part-2/',
@@ -744,7 +744,7 @@ const audioSermons = [
     date: "October-19-1969",
   },
   {
-    audNum:'94m',
+    id:'94m',
     title: "Endtime Bride Of Christ About Her Father's Business",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/endtime-bride-of-christ-about-her-fathers-business/',
@@ -752,7 +752,7 @@ const audioSermons = [
     date: "September-6-1970",
   },
   {
-    audNum:'95m',
+    id:'95m',
     title: "Ephesians Parallels Joshua #1",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ephesians-parallels-joshua-1/',
@@ -760,7 +760,7 @@ const audioSermons = [
     date: "October-1-1972",
   },
   {
-    audNum:'96m',
+    id:'96m',
     title: "Ephesians Parallels Joshua #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ephesians-parallels-joshua-2/',
@@ -768,7 +768,7 @@ const audioSermons = [
     date: "October-8-1972",
   },
   {
-    audNum:'97m',
+    id:'97m',
     title: "Ephesians Parallels Joshua #3",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ephesians-parallels-joshua-3/',
@@ -776,7 +776,7 @@ const audioSermons = [
     date: "October-8-1972",
   },
   {
-    audNum:'98m',
+    id:'98m',
     title: "Ephesians Parallels Joshua #4",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ephesians-parallels-joshua-4/',
@@ -784,7 +784,7 @@ const audioSermons = [
     date: "October-15-1972",
   },
   {
-    audNum:'99m',
+    id:'99m',
     title: "Ephesians Parallels Joshua #5",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ephesians-parallels-joshua-5/',
@@ -792,7 +792,7 @@ const audioSermons = [
     date: "October-15-1972",
   },
   {
-    audNum:'100m',
+    id:'100m',
     title: "Ephesians Parallels Joshua #6",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ephesians-parallels-joshua-6/',
@@ -800,7 +800,7 @@ const audioSermons = [
     date: "February-11-1973",
   },
   {
-    audNum:'101m',
+    id:'101m',
     title: "Evening Light",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/evening-light/',
@@ -808,7 +808,7 @@ const audioSermons = [
     date: "November-29-1970",
   },
   {
-    audNum:'102m',
+    id:'102m',
     title: "Ever Learning - Never Able",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ever-learning-never-able/',
@@ -816,7 +816,7 @@ const audioSermons = [
     date: "March-10-1971",
   },
   {
-    audNum:'103m',
+    id:'103m',
     title: "Evil Communication (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/evil-communication-part-1/',
@@ -824,7 +824,7 @@ const audioSermons = [
     date: "June-5-1969",
   },
   {
-    audNum:'104m',
+    id:'104m',
     title: "Evil Communication (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/evil-communication-part-2/',
@@ -832,7 +832,7 @@ const audioSermons = [
     date: "June-5-1969",
   },
   {
-    audNum:'105m',
+    id:'105m',
     title: "Evil Heart Of Unbelief",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/evil-heart-of-unbelief/',
@@ -840,7 +840,7 @@ const audioSermons = [
     date: "April-12-1970",
   },
   {
-    audNum:'106m',
+    id:'106m',
     title: "Eye To The Body (Diego Martin, Trinidad) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/eye-to-the-body-diego-martin-trinidad-part-1/',
@@ -848,7 +848,7 @@ const audioSermons = [
     date: "December-21-1972",
   },
   {
-    audNum:'107m',
+    id:'107m',
     title: "Eye To The Body (Diego Martin, Trinidad) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/eye-to-the-body-diego-martin-trinidad-part-2/',
@@ -856,7 +856,7 @@ const audioSermons = [
     date: "December-21-1972",
   },
   {
-    audNum:'108m',
+    id:'108m',
     title: "Ezekiel 47",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ezekiel-47/',
@@ -864,7 +864,7 @@ const audioSermons = [
     date: "July-12-1970",
   },
   {
-    audNum:'109m',
+    id:'109m',
     title: "Faith For The Supernatural Birth (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/faith-for-the-supernatural-birth-part-1/',
@@ -872,7 +872,7 @@ const audioSermons = [
     date: "October-31-1971",
   },
   {
-    audNum:'110m',
+    id:'110m',
     title: "Faith For The Supernatural Birth (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/faith-for-the-supernatural-birth-part-2/',
@@ -880,7 +880,7 @@ const audioSermons = [
     date: "October-31-1971",
   },
   {
-    audNum:'111m',
+    id:'111m',
     title: "Falling Away From The Faith",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/falling-away-from-the-faith/',
@@ -888,7 +888,7 @@ const audioSermons = [
     date: "May-19-1968",
   },
   {
-    audNum:'112m',
+    id:'112m',
     title: "False Christs",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/false-christs/',
@@ -896,7 +896,7 @@ const audioSermons = [
     date: "April-8-1973",
   },
   {
-    audNum:'113m',
+    id:'113m',
     title: "Fasting For Revival",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/fasting-for-revival/',
@@ -904,7 +904,7 @@ const audioSermons = [
     date: "September-24-1972",
   },
   {
-    audNum:'114m',
+    id:'114m',
     title: "Fellowship (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/fellowship-part-1/',
@@ -912,7 +912,7 @@ const audioSermons = [
     date: "January-3-1971",
   },
   {
-    audNum:'115m',
+    id:'115m',
     title: "Fellowship (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/fellowship-part-2/',
@@ -920,7 +920,7 @@ const audioSermons = [
     date: "January-3-1971",
   },
   {
-    audNum:'116m',
+    id:'116m',
     title: "Following Apostolic Pattern",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/following-apostolic-pattern/',
@@ -928,7 +928,7 @@ const audioSermons = [
     date: "June-25-1967",
   },
   {
-    audNum:'117m',
+    id:'117m',
     title:
       "Following The Son Of Man In Regeneration In The Evening Time (Part 1)",
     type: "mp3",
@@ -937,7 +937,7 @@ const audioSermons = [
     date: "July-12-1970",
   },
   {
-    audNum:'118m',
+    id:'118m',
     title:
       "Following The Son Of Man In Regeneration In The Evening Time (Part 2)",
     type: "mp3",
@@ -946,7 +946,7 @@ const audioSermons = [
     date: "July-12-1970",
   },
   {
-    audNum:'119m',
+    id:'119m',
     title: "Foundation Was Laid",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/foundation-was-laid/',
@@ -954,7 +954,7 @@ const audioSermons = [
     date: "December-10-1967",
   },
   {
-    audNum:'120m',
+    id:'120m',
     title: "From Darkness To Light #1",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/from-darkness-to-light-1/',
@@ -962,7 +962,7 @@ const audioSermons = [
     date: "December-20-1970",
   },
   {
-    audNum:'121m',
+    id:'121m',
     title: "From Darkness To Light #2 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/from-darkness-to-light-2-part-1/',
@@ -970,7 +970,7 @@ const audioSermons = [
     date: "December-20-1970",
   },
   {
-    audNum:'122m',
+    id:'122m',
     title: "From Darkness To Light #2 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/from-darkness-to-light-2-part-2/',
@@ -978,7 +978,7 @@ const audioSermons = [
     date: "December-20-1970",
   },
   {
-    audNum:'123m',
+    id:'123m',
     title: "Fullness Of Time",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/fullness-of-time/',
@@ -986,7 +986,7 @@ const audioSermons = [
     date: "August-13-1970",
   },
   {
-    audNum:'124m',
+    id:'124m',
     title: "Gathering Together Of Elected (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gathering-together-of-elected-part-1/',
@@ -994,7 +994,7 @@ const audioSermons = [
     date: "November-16-1969",
   },
   {
-    audNum:'125m',
+    id:'125m',
     title: "Gathering Together Of Elected (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gathering-together-of-elected-part-2/',
@@ -1002,7 +1002,7 @@ const audioSermons = [
     date: "November-16-1969",
   },
   {
-    audNum:'126m',
+    id:'126m',
     title: "GOD Creating A Thirst In The Bride",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/god-creating-a-thirst-in-the-bride/',
@@ -1010,7 +1010,7 @@ const audioSermons = [
     date: "July-11-1971",
   },
   {
-    audNum:'127m',
+    id:'127m',
     title: "GOD Creating A Thirst In The Elected Bride (Jeff, In)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/god-creating-a-thirst-in-the-elected-bride-jeff-ind/',
@@ -1018,7 +1018,7 @@ const audioSermons = [
     date: "August-25-1972",
   },
   {
-    audNum:'128m',
+    id:'128m',
     title: "God Honors His Word Above His Name",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/god-honors-his-word-above-his-name/',
@@ -1026,7 +1026,7 @@ const audioSermons = [
     date: "December-31-1961",
   },
   {
-    audNum:'129m',
+    id:'129m',
     title: "GOD Measuring Out The Spirit",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/god-measuring-out-the-spirit/',
@@ -1034,7 +1034,7 @@ const audioSermons = [
     date: "May-14-1972",
   },
   {
-    audNum:'130m',
+    id:'130m',
     title: "GOD's Faithful Servant (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-faithful-servant-1/',
@@ -1042,7 +1042,7 @@ const audioSermons = [
     date: "April-9-1972",
   },
   {
-    audNum:'131m',
+    id:'131m',
     title: "GOD's Faithful Servant (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-faithful-servant-2/',
@@ -1050,7 +1050,7 @@ const audioSermons = [
     date: "April-16-1972",
   },
   {
-    audNum:'132m',
+    id:'132m',
     title: "GOD'S Unconditional Covenant To The Elected Bride (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-unconditional-covenant-to-the-elected-bride-1/',
@@ -1058,7 +1058,7 @@ const audioSermons = [
     date: "November-28-1971",
   },
   {
-    audNum:'133m',
+    id:'133m',
     title: "GOD'S Unconditional Covenant To The Elected Bride (#2) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-unconditional-covenant-to-the-elected-bride-2-part-1/',
@@ -1066,7 +1066,7 @@ const audioSermons = [
     date: "December-5-1971",
   },
   {
-    audNum:'134m',
+    id:'134m',
     title: "GOD'S Unconditional Covenant To The Elected Bride (#2) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-unconditional-covenant-to-the-elected-bride-2-part-2/',
@@ -1074,7 +1074,7 @@ const audioSermons = [
     date: "December-5-1971",
   },
   {
-    audNum:'135m',
+    id:'135m',
     title: "GOD'S Unconditional Covenant To The Elected Bride (#3)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-unconditional-covenant-to-the-elected-bride-3/',
@@ -1082,7 +1082,7 @@ const audioSermons = [
     date: "December-5-1971",
   },
   {
-    audNum:'136m',
+    id:'136m',
     title: "God's Day Of Wrath (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-day-of-wrath-part-1/',
@@ -1090,7 +1090,7 @@ const audioSermons = [
     date: "June-23-1968",
   },
   {
-    audNum:'137m',
+    id:'137m',
     title: "God's Day Of Wrath (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-day-of-wrath-part-2/',
@@ -1098,7 +1098,7 @@ const audioSermons = [
     date: "June-23-1968",
   },
   {
-    audNum:'138m',
+    id:'138m',
     title: "God's End Time Sign",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-end-time-sign/',
@@ -1106,7 +1106,7 @@ const audioSermons = [
     date: "July-16-1967",
   },
   {
-    audNum:'139m',
+    id:'139m',
     title: "God's Gift",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-gift/',
@@ -1114,7 +1114,7 @@ const audioSermons = [
     date: "December-17-1967",
   },
   {
-    audNum:'140m',
+    id:'140m',
     title: "God's Only Way Of Escape In A Day Of Wrath And Judgment (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-only-way-of-escape-in-a-day-of-wrath-and-judgment-part-1/',
@@ -1122,7 +1122,7 @@ const audioSermons = [
     date: "November-23-1969",
   },
   {
-    audNum:'141m',
+    id:'141m',
     title: "God's Only Way Of Escape In A Day Of Wrath And Judgment (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-only-way-of-escape-in-a-day-of-wrath-and-judgment-part-2/',
@@ -1130,7 +1130,7 @@ const audioSermons = [
     date: "November-23-1969",
   },
   {
-    audNum:'142m',
+    id:'142m',
     title: "God's Perfect Love",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-perfect-love/',
@@ -1138,7 +1138,7 @@ const audioSermons = [
     date: "February-7-1971",
   },
   {
-    audNum:'143m',
+    id:'143m',
     title: "God's Provided Way To Bring Unity (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-provided-way-to-bring-unity-part-1/',
@@ -1146,7 +1146,7 @@ const audioSermons = [
     date: "October-12-1969",
   },
   {
-    audNum:'144m',
+    id:'144m',
     title: "God's Provided Way To Bring Unity (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-provided-way-to-bring-unity-part-2/',
@@ -1154,7 +1154,7 @@ const audioSermons = [
     date: "October-12-1969",
   },
   {
-    audNum:'145m',
+    id:'145m',
     title: "God's Sovereign In His Actions",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/gods-sovereign-in-his-actions/',
@@ -1162,7 +1162,7 @@ const audioSermons = [
     date: "July-27-1969",
   },
   {
-    audNum:'146m',
+    id:'146m',
     title: "Golden Nuggets",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/golden-nuggets/',
@@ -1170,7 +1170,7 @@ const audioSermons = [
     date: "August-15-1968",
   },
   {
-    audNum:'147m',
+    id:'147m',
     title: "Goodman Of The House",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/goodman-of-the-house/',
@@ -1178,7 +1178,7 @@ const audioSermons = [
     date: "April-6-1969",
   },
   {
-    audNum:'148m',
+    id:'148m',
     title: "Harvest Time (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/harvest-time-1/',
@@ -1186,7 +1186,7 @@ const audioSermons = [
     date: "July-29-1972",
   },
   {
-    audNum:'149m',
+    id:'149m',
     title: "Harvest Time (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/harvest-time-2/',
@@ -1194,7 +1194,7 @@ const audioSermons = [
     date: "July-30-1972",
   },
   {
-    audNum:'150m',
+    id:'150m',
     title: "Harvest Time (#3)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/harvest-time-3/',
@@ -1202,7 +1202,7 @@ const audioSermons = [
     date: "July-30-1972",
   },
   {
-    audNum:'151m',
+    id:'151m',
     title: "Hated Because Of Coat Of Many Colors",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/hated-because-of-coat-of-many-colors/',
@@ -1210,7 +1210,7 @@ const audioSermons = [
     date: "August-30-1970",
   },
   {
-    audNum:'152m',
+    id:'152m',
     title: "He Must Need Go Through Samaria (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/he-must-need-go-through-samaria-part-1/',
@@ -1218,7 +1218,7 @@ const audioSermons = [
     date: "October-12-1969",
   },
   {
-    audNum:'153m',
+    id:'153m',
     title: "He Must Need Go Through Samaria (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/he-must-need-go-through-samaria-part-2/',
@@ -1226,7 +1226,7 @@ const audioSermons = [
     date: "October-12-1969",
   },
   {
-    audNum:'154m',
+    id:'154m',
     title: "Hearers Of The Prophet Of Mal 4:5",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/hearers-of-the-prophet-of-mal-45/',
@@ -1234,7 +1234,7 @@ const audioSermons = [
     date: "January-4-1970",
   },
   {
-    audNum:'155m',
+    id:'155m',
     title: "Hedged In With God",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/hedged-in-with-god/',
@@ -1242,7 +1242,7 @@ const audioSermons = [
     date: "February-1-1970",
   },
   {
-    audNum:'156m',
+    id:'156m',
     title: "Hour Of Satan's Working",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/hour-of-satans-working/',
@@ -1250,7 +1250,7 @@ const audioSermons = [
     date: "September-21-1969",
   },
   {
-    audNum:'157m',
+    id:'157m',
     title: "Hour Of Temptation (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/hour-of-temptation-part-1/',
@@ -1258,7 +1258,7 @@ const audioSermons = [
     date: "June-14-1970",
   },
   {
-    audNum:'158m',
+    id:'158m',
     title: "Hour Of Temptation (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/hour-of-temptation-part-2/',
@@ -1266,7 +1266,7 @@ const audioSermons = [
     date: "June-14-1970",
   },
   {
-    audNum:'159m',
+    id:'159m',
     title: "How To Be Born Again And How To Enter In (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/how-to-be-born-again-and-how-to-enter-in-part-1/',
@@ -1274,7 +1274,7 @@ const audioSermons = [
     date: "March-9-1969",
   },
   {
-    audNum:'160m',
+    id:'160m',
     title: "How To Be Born Again And How To Enter In (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/how-to-be-born-again-and-how-to-enter-in-part-2/',
@@ -1282,7 +1282,7 @@ const audioSermons = [
     date: "March-9-1969",
   },
   {
-    audNum:'161m',
+    id:'161m',
     title: "How To Enter In God's Ark Today (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/how-to-enter-in-gods-ark-today-part-1/',
@@ -1290,7 +1290,7 @@ const audioSermons = [
     date: "March-20-1969",
   },
   {
-    audNum:'162m',
+    id:'162m',
     title: "How To Enter In God's Ark Today (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/how-to-enter-in-gods-ark-today-part-2/',
@@ -1298,7 +1298,7 @@ const audioSermons = [
     date: "March-20-1969",
   },
   {
-    audNum:'163m',
+    id:'163m',
     title: "How To Receive The Baptism Of The Holy Ghost",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/how-to-receive-the-baptism-of-the-holy-ghost/',
@@ -1306,7 +1306,7 @@ const audioSermons = [
     date: "March-13-1969",
   },
   {
-    audNum:'164m',
+    id:'164m',
     title: "Illegitimate Born Children (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/illegitimate-born-children-part-1/',
@@ -1314,7 +1314,7 @@ const audioSermons = [
     date: "June-8-1969",
   },
   {
-    audNum:'165m',
+    id:'165m',
     title: "Illegitimate Born Children (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/illegitimate-born-children-part-2/',
@@ -1322,7 +1322,7 @@ const audioSermons = [
     date: "June-8-1969",
   },
   {
-    audNum:'166m',
+    id:'166m',
     title: "Influence",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/influence/',
@@ -1330,7 +1330,7 @@ const audioSermons = [
     date: "March-14-1973",
   },
   {
-    audNum:'167m',
+    id:'167m',
     title: "Inheritance In Christ (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/inheritance-in-christ-part-1/',
@@ -1338,7 +1338,7 @@ const audioSermons = [
     date: "August-9-1970",
   },
   {
-    audNum:'168m',
+    id:'168m',
     title: "Inheritance In Christ (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/inheritance-in-christ-part-2/',
@@ -1346,7 +1346,7 @@ const audioSermons = [
     date: "August-9-1970",
   },
   {
-    audNum:'169m',
+    id:'169m',
     title: "Initial Evidence Of The Holy Ghost",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/initial-evidence-of-the-holy-ghost/',
@@ -1354,7 +1354,7 @@ const audioSermons = [
     date: "February-2-1972",
   },
   {
-    audNum:'170m',
+    id:'170m',
     title: "Introducing The Messiah",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/introducing-the-messiah/',
@@ -1362,7 +1362,7 @@ const audioSermons = [
     date: "July-17-1969",
   },
   {
-    audNum:'171m',
+    id:'171m',
     title: "Introduction Of Messiah (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/introduction-of-messiah-part-1/',
@@ -1370,7 +1370,7 @@ const audioSermons = [
     date: "August-2-1970",
   },
   {
-    audNum:'172m',
+    id:'172m',
     title: "Introduction Of Messiah (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/introduction-of-messiah-part-2/',
@@ -1378,7 +1378,7 @@ const audioSermons = [
     date: "August-2-1970",
   },
   {
-    audNum:'173m',
+    id:'173m',
     title: "Inviting Jesus Into The Ship",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/inviting-jesus-into-the-ship/',
@@ -1386,7 +1386,7 @@ const audioSermons = [
     date: "February-7-1973",
   },
   {
-    audNum:'174m',
+    id:'174m',
     title: "Israel Trip",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/israel-trip/',
@@ -1394,7 +1394,7 @@ const audioSermons = [
     date: "September-25-1969",
   },
   {
-    audNum:'175m',
+    id:'175m',
     title: "Jesus And Peter",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/jesus-and-peter/',
@@ -1402,7 +1402,7 @@ const audioSermons = [
     date: "March-16-1969",
   },
   {
-    audNum:'176m',
+    id:'176m',
     title: "Joseph",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/joseph/',
@@ -1410,7 +1410,7 @@ const audioSermons = [
     date: "January-28-1973",
   },
   {
-    audNum:'177m',
+    id:'177m',
     title: "Joy",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/joy/',
@@ -1418,7 +1418,7 @@ const audioSermons = [
     date: "April-17-1964",
   },
   {
-    audNum:'178m',
+    id:'178m',
     title: "Joy Unspeakable",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/joy-unspeakable/',
@@ -1426,7 +1426,7 @@ const audioSermons = [
     date: "April-15-1964",
   },
   {
-    audNum:'179m',
+    id:'179m',
     title: "Knowing Your Enemy",
     type: "mp3",
     audioUrl:'',
@@ -1434,7 +1434,7 @@ const audioSermons = [
     date: "May-19-1971",
   },
   {
-    audNum:'180m',
+    id:'180m',
     title: "Last Separation Before Promise Blessing",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/last-separation-before-promise-blessing/',
@@ -1442,7 +1442,7 @@ const audioSermons = [
     date: "April-24-1969",
   },
   {
-    audNum:'181m',
+    id:'181m',
     title: "Led By The Spirit",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/led-by-the-spirit/',
@@ -1450,7 +1450,7 @@ const audioSermons = [
     date: "May-16-1971",
   },
   {
-    audNum:'182m',
+    id:'182m',
     title: "Lesson On Perfect Faith (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/lesson-on-perfect-faith-part-1/',
@@ -1458,7 +1458,7 @@ const audioSermons = [
     date: "October-24-1971",
   },
   {
-    audNum:'183m',
+    id:'183m',
     title: "Lesson On Perfect Faith (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/lesson-on-perfect-faith-part-2/',
@@ -1466,7 +1466,7 @@ const audioSermons = [
     date: "October-24-1971",
   },
   {
-    audNum:'184m',
+    id:'184m',
     title: "Liberty",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/liberty/',
@@ -1474,7 +1474,7 @@ const audioSermons = [
     date: "September-20-1972",
   },
   {
-    audNum:'185m',
+    id:'185m',
     title: "Light",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/light/',
@@ -1482,7 +1482,7 @@ const audioSermons = [
     date: "July-8-1973",
   },
   {
-    audNum:'186m',
+    id:'186m',
     title: "Living Bread & Body Of The Lord Jesus",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/living-bread-body-of-the-lord-jesus/',
@@ -1490,7 +1490,7 @@ const audioSermons = [
     date: "August-4-1968",
   },
   {
-    audNum:'187m',
+    id:'187m',
     title: "Living Temple",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/living-temple/',
@@ -1498,7 +1498,7 @@ const audioSermons = [
     date: "February-11-1968",
   },
   {
-    audNum:'188m',
+    id:'188m',
     title: "Looking For Christ To Come (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/looking-for-christ-to-come-part-1/',
@@ -1506,7 +1506,7 @@ const audioSermons = [
     date: "November-8-1970",
   },
   {
-    audNum:'189m',
+    id:'189m',
     title: "Looking For Christ To Come (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/looking-for-christ-to-come-part-1/',
@@ -1514,7 +1514,7 @@ const audioSermons = [
     date: "November-8-1970",
   },
   {
-    audNum:'190m',
+    id:'190m',
     title: "Mal. 3:1-3, 4:5 The Waymaker (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/mal-31-3-45-the-waymaker-part-1/',
@@ -1522,7 +1522,7 @@ const audioSermons = [
     date: "June-28-1970",
   },
   {
-    audNum:'191m',
+    id:'191m',
     title: "Mal. 3:1-3, 4:5 The Waymaker (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/mal-31-3-45-the-waymaker-part-2/',
@@ -1530,7 +1530,7 @@ const audioSermons = [
     date: "June-28-1970",
   },
   {
-    audNum:'192m',
+    id:'192m',
     title: "Messages Come To Shepherds-Feed My Sheep",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/messages-come-to-shepherds-feed-my-sheep/',
@@ -1538,7 +1538,7 @@ const audioSermons = [
     date: "May-12-1968",
   },
   {
-    audNum:'193m',
+    id:'193m',
     title: "Messenger Of The Covenant",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/messenger-of-the-covenant/',
@@ -1546,7 +1546,7 @@ const audioSermons = [
     date: "September-29-1968",
   },
   {
-    audNum:'194m',
+    id:'194m',
     title: "Ministry Of The Bride #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ministry-of-the-bride-1-part-1/',
@@ -1554,7 +1554,7 @@ const audioSermons = [
     date: "January-2-1972",
   },
   {
-    audNum:'195m',
+    id:'195m',
     title: "Ministry Of The Bride #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ministry-of-the-bride-1-part-2/',
@@ -1562,7 +1562,7 @@ const audioSermons = [
     date: "January-2-1972",
   },
   {
-    audNum:'196m',
+    id:'196m',
     title: "Ministry Of The Bride #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/ministry-of-the-bride-2/',
@@ -1570,7 +1570,7 @@ const audioSermons = [
     date: "January-2-1972",
   },
   {
-    audNum:'197m',
+    id:'197m',
     title: "Moses` Sin & Smitten Rock (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/moses-sin-smitten-rock-part-1/',
@@ -1578,7 +1578,7 @@ const audioSermons = [
     date: "February-2-1969",
   },
   {
-    audNum:'198m',
+    id:'198m',
     title: "Moses` Sin & Smitten Rock (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/moses-sin-smitten-rock-part-2/',
@@ -1586,7 +1586,7 @@ const audioSermons = [
     date: "February-2-1969",
   },
   {
-    audNum:'199m',
+    id:'199m',
     title: "Mystery Of God's Will",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/mystery-of-gods-will/',
@@ -1594,7 +1594,7 @@ const audioSermons = [
     date: "May-31-1970",
   },
   {
-    audNum:'200m',
+    id:'200m',
     title: "New Year's Eve Service (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/new-years-eve-service-part-1/',
@@ -1602,7 +1602,7 @@ const audioSermons = [
     date: "December-31-1970",
   },
   {
-    audNum:'201m',
+    id:'201m',
     title: "New Year's Eve Service (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/new-years-eve-service-part-2/',
@@ -1610,7 +1610,7 @@ const audioSermons = [
     date: "December-31-1970",
   },
   {
-    audNum:'202m',
+    id:'202m',
     title: "No Condemnation To Those In Christ",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/no-condemnation-to-those-in-christ/',
@@ -1618,7 +1618,7 @@ const audioSermons = [
     date: "May-2-1971",
   },
   {
-    audNum:'203m',
+    id:'203m',
     title: "Nuggets (Bob & Shirleys Dreams Of Mark)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/nuggets-bob-shirleys-dreams-of-mark/',
@@ -1626,7 +1626,7 @@ const audioSermons = [
     date: "September-22-1971",
   },
   {
-    audNum:'204m',
+    id:'204m',
     title: "Obtaining Mercy And Grace",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/obtaining-mercy-and-grace/',
@@ -1634,7 +1634,7 @@ const audioSermons = [
     date: "February-14-1973",
   },
   {
-    audNum:'205m',
+    id:'205m',
     title: "Oneness",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/oneness/',
@@ -1642,7 +1642,7 @@ const audioSermons = [
     date: "April-21-1968",
   },
   {
-    audNum:'206m',
+    id:'206m',
     title: "Our Foundation Today (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-foundation-today-part-1/',
@@ -1650,7 +1650,7 @@ const audioSermons = [
     date: "January-31-1971",
   },
   {
-    audNum:'207m',
+    id:'207m',
     title: "Our Foundation Today (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-foundation-today-part-2/',
@@ -1658,7 +1658,7 @@ const audioSermons = [
     date: "January-31-1971",
   },
   {
-    audNum:'208m',
+    id:'208m',
     title: "Our Redeemer #1",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-redeemer-1/',
@@ -1666,7 +1666,7 @@ const audioSermons = [
     date: "October-13-1968",
   },
   {
-    audNum:'209m',
+    id:'209m',
     title: "Our Redeemer #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-redeemer-2/',
@@ -1674,7 +1674,7 @@ const audioSermons = [
     date: "October-20-1968",
   },
   {
-    audNum:'210m',
+    id:'210m',
     title: "Our Redeemer #3 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-redeemer-3-part-1/',
@@ -1682,7 +1682,7 @@ const audioSermons = [
     date: "November-3-1968",
   },
   {
-    audNum:'211m',
+    id:'211m',
     title: "Our Redeemer #3 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-redeemer-3-part-2/',
@@ -1690,7 +1690,7 @@ const audioSermons = [
     date: "November-3-1968",
   },
   {
-    audNum:'212m',
+    id:'212m',
     title: "Our Redeemer #4",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/our-redeemer-4/',
@@ -1698,7 +1698,7 @@ const audioSermons = [
     date: "November-10-1968",
   },
   {
-    audNum:'213m',
+    id:'213m',
     title: "Parable Of The Net",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/parable-of-the-net/',
@@ -1706,7 +1706,7 @@ const audioSermons = [
     date: "January-3-1971",
   },
   {
-    audNum:'214m',
+    id:'214m',
     title: "Parable Of The Vineyard (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/parable-of-the-vineyard-1/',
@@ -1714,7 +1714,7 @@ const audioSermons = [
     date: "July-16-1972",
   },
   {
-    audNum:'215m',
+    id:'215m',
     title: "Parable Of The Vineyard (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/parable-of-the-vineyard-2/',
@@ -1722,7 +1722,7 @@ const audioSermons = [
     date: "July-16-1972",
   },
   {
-    audNum:'216m',
+    id:'216m',
     title: "Parable On Eleventh Hour Gentile Worker (Jeff, In) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/parable-on-eleventh-hour-gentile-worker-jeff-in-part-1/',
@@ -1730,7 +1730,7 @@ const audioSermons = [
     date: "August-20-1972",
   },
   {
-    audNum:'217m',
+    id:'217m',
     title: "Parable On Eleventh Hour Gentile Worker (Jeff, In) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/parable-on-eleventh-hour-gentile-worker-jeff-in-part-2/',
@@ -1738,7 +1738,7 @@ const audioSermons = [
     date: "August-20-1972",
   },
   {
-    audNum:'218m',
+    id:'218m',
     title: "Patience (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/patience-part-1/',
@@ -1746,7 +1746,7 @@ const audioSermons = [
     date: "November-5-1967",
   },
   {
-    audNum:'219m',
+    id:'219m',
     title: "Patience (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/patience-part-2/',
@@ -1754,7 +1754,7 @@ const audioSermons = [
     date: "November-5-1967",
   },
   {
-    audNum:'220m',
+    id:'220m',
     title: "Patience To Inherit The Promise",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/patience-to-inherit-the-promise/',
@@ -1762,7 +1762,7 @@ const audioSermons = [
     date: "July-24-1969",
   },
   {
-    audNum:'221m',
+    id:'221m',
     title: "Patience To Wait On God's Promise (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/patience-to-wait-on-gods-promise-part-1/',
@@ -1770,7 +1770,7 @@ const audioSermons = [
     date: "March-8-1970",
   },
   {
-    audNum:'222m',
+    id:'222m',
     title: "Patience To Wait On God's Promise (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/patience-to-wait-on-gods-promise-part-2/',
@@ -1778,7 +1778,7 @@ const audioSermons = [
     date: "March-8-1970",
   },
   {
-    audNum:'223m',
+    id:'223m',
     title: "Payday-Payoff (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/payday-payoff-part-1/',
@@ -1786,7 +1786,7 @@ const audioSermons = [
     date: "July-25-1971",
   },
   {
-    audNum:'224m',
+    id:'224m',
     title: "Payday-Payoff (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/payday-payoff-part-2/',
@@ -1794,7 +1794,7 @@ const audioSermons = [
     date: "July-25-1971",
   },
   {
-    audNum:'225m',
+    id:'225m',
     title: "Perfection",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/perfection/',
@@ -1802,7 +1802,7 @@ const audioSermons = [
     date: "August-18-1968",
   },
   {
-    audNum:'226m',
+    id:'226m',
     title: "Perfection (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/perfection-part-1/',
@@ -1810,7 +1810,7 @@ const audioSermons = [
     date: "October-25-1970",
   },
   {
-    audNum:'227m',
+    id:'227m',
     title: "Perfection (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/perfection-part-2/',
@@ -1818,7 +1818,7 @@ const audioSermons = [
     date: "October-25-1970",
   },
   {
-    audNum:'228m',
+    id:'228m',
     title: "Persuasion By Influence",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/persuasion-by-influence/',
@@ -1826,7 +1826,7 @@ const audioSermons = [
     date: "May-10-1970",
   },
   {
-    audNum:'229m',
+    id:'229m',
     title: "Planted By God #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/planted-by-god-1-part-1/',
@@ -1834,7 +1834,7 @@ const audioSermons = [
     date: "September-27-1970",
   },
   {
-    audNum:'230m',
+    id:'230m',
     title: "Planted By God #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/planted-by-god-1-part-2/',
@@ -1842,7 +1842,7 @@ const audioSermons = [
     date: "September-27-1970",
   },
   {
-    audNum:'231m',
+    id:'231m',
     title: "Planted By God #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/planted-by-god-2/',
@@ -1850,7 +1850,7 @@ const audioSermons = [
     date: "September-27-1970",
   },
   {
-    audNum:'232m',
+    id:'232m',
     title: "Planted By God #3",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/planted-by-god-3/',
@@ -1858,7 +1858,7 @@ const audioSermons = [
     date: "October-1-1970",
   },
   {
-    audNum:'233m',
+    id:'233m',
     title: "Positionally Placed Last Time Bride (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/positionally-placed-last-time-bride-part-1/',
@@ -1866,7 +1866,7 @@ const audioSermons = [
     date: "May-10-1970",
   },
   {
-    audNum:'234m',
+    id:'234m',
     title: "Positionally Placed Last Time Bride (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/positionally-placed-last-time-bride-part-2/',
@@ -1874,7 +1874,7 @@ const audioSermons = [
     date: "May-10-1970",
   },
   {
-    audNum:'235m',
+    id:'235m',
     title: "Potential",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/potential/',
@@ -1882,7 +1882,7 @@ const audioSermons = [
     date: "August-27-1970",
   },
   {
-    audNum:'236m',
+    id:'236m',
     title: "Power For Service",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/potential/',
@@ -1890,7 +1890,7 @@ const audioSermons = [
     date: "December-6-1970",
   },
   {
-    audNum:'237m',
+    id:'237m',
     title: "Power To Loose And Bind",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/power-to-loose-and-bind/',
@@ -1898,7 +1898,7 @@ const audioSermons = [
     date: "July-20-1969",
   },
   {
-    audNum:'238m',
+    id:'238m',
     title: "Prayer",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/prayer/',
@@ -1906,7 +1906,7 @@ const audioSermons = [
     date: "November-5-1969",
   },
   {
-    audNum:'239m',
+    id:'239m',
     title: "Preparation For Fulfillment Of The Reveled Promise",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/preparation-for-fulfillment-of-the-reveled-promise/',
@@ -1914,7 +1914,7 @@ const audioSermons = [
     date: "April- 25-1971",
   },
   {
-    audNum:'240m',
+    id:'240m',
     title: "Proper Doctrine",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/proper-doctrine/',
@@ -1922,7 +1922,7 @@ const audioSermons = [
     date: "April- 19-1972",
   },
   {
-    audNum:'241m',
+    id:'241m',
     title: "Psalms 91 & 95",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/psalms-91-95/',
@@ -1930,7 +1930,7 @@ const audioSermons = [
     date: "June- 25-1970",
   },
   {
-    audNum:'242m',
+    id:'242m',
     title: "Questions & Answers #1 (Tree Of Life)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-1-tree-of-life/',
@@ -1938,7 +1938,7 @@ const audioSermons = [
     date: "February- 9-1971",
   },
   {
-    audNum:'243m',
+    id:'243m',
     title: "Questions & Answers #10",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-10/',
@@ -1946,7 +1946,7 @@ const audioSermons = [
     date: "April- 12-1972",
   },
   {
-    audNum:'244m',
+    id:'244m',
     title: "Questions & Answers #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-2/',
@@ -1954,7 +1954,7 @@ const audioSermons = [
     date: "June- 2-1971",
   },
   {
-    audNum:'245m',
+    id:'245m',
     title: "Questions & Answers #3",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-3/',
@@ -1962,7 +1962,7 @@ const audioSermons = [
     date: "June- 16-1971",
   },
   {
-    audNum:'246m',
+    id:'246m',
     title: "Questions & Answers #4",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-4/',
@@ -1970,7 +1970,7 @@ const audioSermons = [
     date: "June- 23-1971",
   },
   {
-    audNum:'247m',
+    id:'247m',
     title: "Questions & Answers #5",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-5/',
@@ -1978,7 +1978,7 @@ const audioSermons = [
     date: "July- 28-1971",
   },
   {
-    audNum:'248m',
+    id:'248m',
     title: "Questions & Answers #6 (Bride-Serpent Seed)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-6-bride-serpent-seed/',
@@ -1986,7 +1986,7 @@ const audioSermons = [
     date: "August- 14-1971",
   },
   {
-    audNum:'249m',
+    id:'249m',
     title: "Questions & Answers #7 ( New Birth )",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-7-new-birth/',
@@ -1994,7 +1994,7 @@ const audioSermons = [
     date: "October- 27-1971",
   },
   {
-    audNum:'250m',
+    id:'250m',
     title: "Questions & Answers #8",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-8/',
@@ -2002,7 +2002,7 @@ const audioSermons = [
     date: "May- 3-1972",
   },
   {
-    audNum:'251m',
+    id:'251m',
     title: "Questions & Answers #9",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/questions-answers-9/',
@@ -2010,7 +2010,7 @@ const audioSermons = [
     date: "March- 15-1972",
   },
   {
-    audNum:'252m',
+    id:'252m',
     title: "Rahab And The Scarlet Cord (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rahab-and-the-scarlet-cord-part-1/',
@@ -2018,7 +2018,7 @@ const audioSermons = [
     date: "August- 29-1971",
   },
   {
-    audNum:'253m',
+    id:'253m',
     title: "Rahab And The Scarlet Cord (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rahab-and-the-scarlet-cord-part-2/',
@@ -2026,7 +2026,7 @@ const audioSermons = [
     date: "August- 29-1971",
   },
   {
-    audNum:'254m',
+    id:'254m',
     title: "Rapturing Faith (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rapturing-faith-part-1/',
@@ -2034,7 +2034,7 @@ const audioSermons = [
     date: "July- 20-1969",
   },
   {
-    audNum:'255m',
+    id:'255m',
     title: "Rapturing Faith (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rapturing-faith-part-2/',
@@ -2042,7 +2042,7 @@ const audioSermons = [
     date: "July- 20-1969",
   },
   {
-    audNum:'256m',
+    id:'256m',
     title: "Recongnizing The Promise And Making Preparation For Fulfillment",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/recongnizing-the-promise-and-making-preparation-for-fulfillment/',
@@ -2050,7 +2050,7 @@ const audioSermons = [
     date: "June- 27-1971",
   },
   {
-    audNum:'257m',
+    id:'257m',
     title: "Redemption By The Blood (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/redemption-by-the-blood-part-1/',
@@ -2058,7 +2058,7 @@ const audioSermons = [
     date: "January- 25-1970",
   },
   {
-    audNum:'258m',
+    id:'258m',
     title: "Redemption By The Blood (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/redemption-by-the-blood-part-2/',
@@ -2066,7 +2066,7 @@ const audioSermons = [
     date: "January- 25-1970",
   },
   {
-    audNum:'259m',
+    id:'259m',
     title: "Rejecting God's Council (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rejecting-gods-council-part-1/',
@@ -2074,7 +2074,7 @@ const audioSermons = [
     date: "April- 20-1969",
   },
   {
-    audNum:'260m',
+    id:'260m',
     title: "Rejecting God's Council (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rejecting-gods-council-part-2/',
@@ -2082,7 +2082,7 @@ const audioSermons = [
     date: "April- 20-1969",
   },
   {
-    audNum:'261m',
+    id:'261m',
     title: "Remarks To The Church",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/remarks-to-the-church/',
@@ -2090,7 +2090,7 @@ const audioSermons = [
     date: "September- 5-1971",
   },
   {
-    audNum:'262m',
+    id:'262m',
     title: "Remember Lot's Wife (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/remember-lots-wife-part-1/',
@@ -2098,7 +2098,7 @@ const audioSermons = [
     date: "June- 4-1972",
   },
   {
-    audNum:'263m',
+    id:'263m',
     title: "Remember Lot's Wife (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/remember-lots-wife-part-2/',
@@ -2106,7 +2106,7 @@ const audioSermons = [
     date: "June- 4-1972",
   },
   {
-    audNum:'264m',
+    id:'264m',
     title: "Reproach For The Word",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/reproach-for-the-word/',
@@ -2114,7 +2114,7 @@ const audioSermons = [
     date: "July- 27-1969",
   },
   {
-    audNum:'265m',
+    id:'265m',
     title: "Respect To God's Anointed Servants (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/respect-to-gods-anointed-servants-part-1/',
@@ -2122,7 +2122,7 @@ const audioSermons = [
     date: "August- 20-1970",
   },
   {
-    audNum:'266m',
+    id:'266m',
     title: "Respect To God's Anointed Servants (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/respect-to-gods-anointed-servants-part-2/',
@@ -2130,7 +2130,7 @@ const audioSermons = [
     date: "August- 20-1970",
   },
   {
-    audNum:'267m',
+    id:'267m',
     title: "Restoration",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/restoration/',
@@ -2138,7 +2138,7 @@ const audioSermons = [
     date: "February- 11-1968",
   },
   {
-    audNum:'268m',
+    id:'268m',
     title: "Restoration",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/restoration-2/',
@@ -2146,7 +2146,7 @@ const audioSermons = [
     date: "May- 3-1970",
   },
   {
-    audNum:'269m',
+    id:'269m',
     title: "Rev. Of His Will For Us (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rev-of-his-will-for-us-1/',
@@ -2154,7 +2154,7 @@ const audioSermons = [
     date: "December- 26-1972",
   },
   {
-    audNum:'270m',
+    id:'270m',
     title: "Rev. Of His Will For Us (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rev-of-his-will-for-us-2/',
@@ -2162,7 +2162,7 @@ const audioSermons = [
     date: "December- 26-1972",
   },
   {
-    audNum:'271m',
+    id:'271m',
     title: "Rev. Of The Son Of Man",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rev-of-the-son-of-man/',
@@ -2170,7 +2170,7 @@ const audioSermons = [
     date: "January- 28-1968",
   },
   {
-    audNum:'272m',
+    id:'272m',
     title: "Rich & Have Need Of Nothing",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rich-have-need-of-nothing/',
@@ -2178,7 +2178,7 @@ const audioSermons = [
     date: "January- 21-1968",
   },
   {
-    audNum:'273m',
+    id:'273m',
     title: "Righteousness & Justification #1",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/righteousness-justification-1/',
@@ -2186,7 +2186,7 @@ const audioSermons = [
     date: "July- 9-1970",
   },
   {
-    audNum:'274m',
+    id:'274m',
     title: "Righteousness & Justification #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/righteousness-justification-2/',
@@ -2194,7 +2194,7 @@ const audioSermons = [
     date: "July- 23-1970",
   },
   {
-    audNum:'275m',
+    id:'275m',
     title: "Rivers Of Unbelief & Bride Out Of Step (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rivers-of-unbelief-bride-out-of-step-part-1/',
@@ -2202,7 +2202,7 @@ const audioSermons = [
     date: "January- 14-1968",
   },
   {
-    audNum:'276m',
+    id:'276m',
     title: "Rivers Of Unbelief & Bride Out Of Step (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/rivers-of-unbelief-bride-out-of-step-part-2/',
@@ -2210,7 +2210,7 @@ const audioSermons = [
     date: "January- 14-1968",
   },
   {
-    audNum:'277m',
+    id:'277m',
     title: "Salt Without Savour",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/salt-without-savour/',
@@ -2218,7 +2218,7 @@ const audioSermons = [
     date: "August- 11-1968",
   },
   {
-    audNum:'278m',
+    id:'278m',
     title: "Satan And Job (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/satan-and-job-part-1/',
@@ -2226,7 +2226,7 @@ const audioSermons = [
     date: "September- 21-1969",
   },
   {
-    audNum:'279m',
+    id:'279m',
     title: "Satan And Job (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/satan-and-job-part-2/',
@@ -2234,7 +2234,7 @@ const audioSermons = [
     date: "September- 21-1969",
   },
   {
-    audNum:'280m',
+    id:'280m',
     title: "Scoffers Of The Promise",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/scoffers-of-the-promise/',
@@ -2242,7 +2242,7 @@ const audioSermons = [
     date: "January- 7-1971",
   },
   {
-    audNum:'281m',
+    id:'281m',
     title: "Second Hand Religion",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/second-hand-religion/',
@@ -2250,7 +2250,7 @@ const audioSermons = [
     date: "May- 14-1972",
   },
   {
-    audNum:'282m',
+    id:'282m',
     title: "Seeking Love",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/seeking-love/',
@@ -2258,7 +2258,7 @@ const audioSermons = [
     date: "April- 8-1973",
   },
   {
-    audNum:'283m',
+    id:'283m',
     title: "Seeking The Lord For Revival",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/seeking-the-lord-for-revival/',
@@ -2266,7 +2266,7 @@ const audioSermons = [
     date: "September- 9-1972",
   },
   {
-    audNum:'284m',
+    id:'284m',
     title: "Seeking To Find Jesus (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/seeking-to-find-jesus-part-1/',
@@ -2274,7 +2274,7 @@ const audioSermons = [
     date: "April- 6-1969",
   },
   {
-    audNum:'285m',
+    id:'285m',
     title: "Seeking To Find Jesus (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/seeking-to-find-jesus-part-2/',
@@ -2282,7 +2282,7 @@ const audioSermons = [
     date: "April- 6-1969",
   },
   {
-    audNum:'286m',
+    id:'286m',
     title: "Shamgar",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/shamgar/',
@@ -2290,7 +2290,7 @@ const audioSermons = [
     date: "October- 20-1968",
   },
   {
-    audNum:'287m',
+    id:'287m',
     title: "Sleepless Prayer",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/sleepless-prayer/',
@@ -2298,7 +2298,7 @@ const audioSermons = [
     date: "October- 14-1964",
   },
   {
-    audNum:'288m',
+    id:'288m',
     title: "Some Standing Here",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/some-standing-here/',
@@ -2306,7 +2306,7 @@ const audioSermons = [
     date: "December- 3-1970",
   },
   {
-    audNum:'289m',
+    id:'289m',
     title: "Something You Can Do",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/something-you-can-do/',
@@ -2314,7 +2314,7 @@ const audioSermons = [
     date: "April- 25-1973",
   },
   {
-    audNum:'290m',
+    id:'290m',
     title: "Son Of Man (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-part-1/',
@@ -2322,7 +2322,7 @@ const audioSermons = [
     date: "June- 21-1970",
   },
   {
-    audNum:'291m',
+    id:'291m',
     title: "Son Of Man (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-part-2/',
@@ -2330,7 +2330,7 @@ const audioSermons = [
     date: "June- 21-1970",
   },
   {
-    audNum:'292m',
+    id:'292m',
     title: "Son Of Man And His Angels #1 (Jeff, In) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-and-his-angels-1-jeff-in-part-1/',
@@ -2338,7 +2338,7 @@ const audioSermons = [
     date: "January- 20-1973",
   },
   {
-    audNum:'293m',
+    id:'293m',
     title: "Son Of Man And His Angels #1 (Jeff, In) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-and-his-angels-1-jeff-in-part-2/',
@@ -2346,7 +2346,7 @@ const audioSermons = [
     date: "January- 20-1973",
   },
   {
-    audNum:'294m',
+    id:'294m',
     title: "Son Of Man And His Angels #2 (Jeff, In)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-and-his-angels-2-jeff-in/',
@@ -2354,7 +2354,7 @@ const audioSermons = [
     date: "January- 21-1973",
   },
   {
-    audNum:'295m',
+    id:'295m',
     title: "Son Of Man And The Little Book (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-and-the-little-book-part-1/',
@@ -2362,7 +2362,7 @@ const audioSermons = [
     date: "March- 21-1971",
   },
   {
-    audNum:'296m',
+    id:'296m',
     title: "Son Of Man And The Little Book (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-and-the-little-book-part-2/',
@@ -2370,7 +2370,7 @@ const audioSermons = [
     date: "March- 21-1971",
   },
   {
-    audNum:'297m',
+    id:'297m',
     title: "Son Of Man Ministry",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/son-of-man-ministry/',
@@ -2378,7 +2378,7 @@ const audioSermons = [
     date: "June- 28-1972",
   },
   {
-    audNum:'298m',
+    id:'298m',
     title: "Son's Back To Eden",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/sons-back-to-eden/',
@@ -2386,7 +2386,7 @@ const audioSermons = [
     date: "August- 10-1967",
   },
   {
-    audNum:'299m',
+    id:'299m',
     title: "Sound Doctrine (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/sound-doctrine-part-1/',
@@ -2394,7 +2394,7 @@ const audioSermons = [
     date: "June- 2-1968",
   },
   {
-    audNum:'300m',
+    id:'300m',
     title: "Sound Doctrine (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/sound-doctrine-part-2/',
@@ -2402,7 +2402,7 @@ const audioSermons = [
     date: "June- 2-1968",
   },
   {
-    audNum:'301m',
+    id:'301m',
     title: "Spirit Of Christ",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spirit-of-christ/',
@@ -2410,7 +2410,7 @@ const audioSermons = [
     date: "June- 30-1968",
   },
   {
-    audNum:'302m',
+    id:'302m',
     title: "Spirit Of Elijah (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spirit-of-elijah-part-1/',
@@ -2418,7 +2418,7 @@ const audioSermons = [
     date: "June- 16-1968",
   },
   {
-    audNum:'303m',
+    id:'303m',
     title: "Spirit Of Elijah (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spirit-of-elijah-part-2/',
@@ -2426,7 +2426,7 @@ const audioSermons = [
     date: "June- 16-1968",
   },
   {
-    audNum:'304m',
+    id:'304m',
     title: "Spirit Of Moses (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spirit-of-moses-part-1/',
@@ -2434,7 +2434,7 @@ const audioSermons = [
     date: "June- 23-1968",
   },
   {
-    audNum:'305m',
+    id:'305m',
     title: "Spirit Of Moses (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spirit-of-moses-part-2/',
@@ -2442,7 +2442,7 @@ const audioSermons = [
     date: "June- 23-1968",
   },
   {
-    audNum:'306m',
+    id:'306m',
     title: "Spirit Of The Son Of Man",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spirit-of-the-son-of-man/',
@@ -2450,7 +2450,7 @@ const audioSermons = [
     date: "July- 7-1968",
   },
   {
-    audNum:'307m',
+    id:'307m',
     title: "Spiritual Cancer",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spiritual-cancer/',
@@ -2458,7 +2458,7 @@ const audioSermons = [
     date: "August- 3-1967",
   },
   {
-    audNum:'308m',
+    id:'308m',
     title: "Spoken Word Original Seed #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-part-1/',
@@ -2466,7 +2466,7 @@ const audioSermons = [
     date: "May- 23-1971",
   },
   {
-    audNum:'309m',
+    id:'309m',
     title: "Spoken Word Original Seed #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-part-2/',
@@ -2474,7 +2474,7 @@ const audioSermons = [
     date: "May- 23-1971",
   },
   {
-    audNum:'310m',
+    id:'310m',
     title: "Spoken Word Original Seed #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-2/',
@@ -2482,7 +2482,7 @@ const audioSermons = [
     date: "May- 23-1971",
   },
   {
-    audNum:'311m',
+    id:'311m',
     title: "Spoken Word Original Seed #3 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-3-part-1/',
@@ -2490,7 +2490,7 @@ const audioSermons = [
     date: "July- 18-1971",
   },
   {
-    audNum:'312m',
+    id:'312m',
     title: "Spoken Word Original Seed #3 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-3-part-2/',
@@ -2498,7 +2498,7 @@ const audioSermons = [
     date: "July- 18-1971",
   },
   {
-    audNum:'313m',
+    id:'313m',
     title: "Spoken Word Original Seed #4 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-4-part-1/',
@@ -2506,7 +2506,7 @@ const audioSermons = [
     date: "August- 8-1971",
   },
   {
-    audNum:'314m',
+    id:'314m',
     title: "Spoken Word Original Seed #4 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/spoken-word-original-seed-4-part-2/',
@@ -2514,7 +2514,7 @@ const audioSermons = [
     date: "August- 8-1971",
   },
   {
-    audNum:'315m',
+    id:'315m',
     title: "Study-Christ The Mystery Of God Revealed (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/study-christ-the-mystery-of-god-revealed-part/',
@@ -2522,7 +2522,7 @@ const audioSermons = [
     date: "November- 24-1968",
   },
   {
-    audNum:'316m',
+    id:'316m',
     title: "Study-Christ The Mystery Of God Revealed (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/study-christ-the-mystery-of-god-revealed-part-2/',
@@ -2530,7 +2530,7 @@ const audioSermons = [
     date: "November- 24-1968",
   },
   {
-    audNum:'317m',
+    id:'317m',
     title: "Substitute (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/substitute-part-1/',
@@ -2538,7 +2538,7 @@ const audioSermons = [
     date: "June- 15-1969",
   },
   {
-    audNum:'318m',
+    id:'318m',
     title: "Substitute (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/substitute-part-2/',
@@ -2546,7 +2546,7 @@ const audioSermons = [
     date: "June- 15-1969",
   },
   {
-    audNum:'319m',
+    id:'319m',
     title: "Sun Of Righteousness",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/sun-of-righteousness/',
@@ -2554,7 +2554,7 @@ const audioSermons = [
     date: "July- 9-1972",
   },
   {
-    audNum:'320m',
+    id:'320m',
     title: "Take Heed How You Hear (Durham, CT)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/take-heed-how-you-hear-durham-ct/',
@@ -2562,7 +2562,7 @@ const audioSermons = [
     date: "March- 19-1972",
   },
   {
-    audNum:'321m',
+    id:'321m',
     title: "Take Heed How You Hear (Jeff, In)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/take-heed-how-you-hearjeff-in/',
@@ -2570,7 +2570,7 @@ const audioSermons = [
     date: "August- 26-1972",
   },
   {
-    audNum:'322m',
+    id:'322m',
     title: "Tape-One More Time WMB, R. Lambert (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tape-one-more-time-wmb-r-lambert-part-2/',
@@ -2578,7 +2578,7 @@ const audioSermons = [
     date: "January- 17-1971",
   },
   {
-    audNum:'323m',
+    id:'323m',
     title: "Tape-One More Time WMB, R. Lambert (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tape-one-more-time-wmb-r-lambert-part-2/',
@@ -2586,7 +2586,7 @@ const audioSermons = [
     date: "January- 17-1971",
   },
   {
-    audNum:'324m',
+    id:'324m',
     title: "Tape-Testing Time-WMB",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tape-testing-time-wmb/',
@@ -2594,7 +2594,7 @@ const audioSermons = [
     date: "January- 31-1971",
   },
   {
-    audNum:'325m',
+    id:'325m',
     title: "Tender Mercies Of GOD",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tender-mercies-of-god/',
@@ -2602,7 +2602,7 @@ const audioSermons = [
     date: "April- 16-1972",
   },
   {
-    audNum:'326m',
+    id:'326m',
     title: "Testing Before Blessing",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tender-mercies-of-god/',
@@ -2610,7 +2610,7 @@ const audioSermons = [
     date: "February- 4-1968",
   },
   {
-    audNum:'327m',
+    id:'327m',
     title: "Testing For Discipleship By The Revealed Word",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/testing-for-discipleship-by-the-revealed-word/',
@@ -2618,7 +2618,7 @@ const audioSermons = [
     date: "August- 11-1971",
   },
   {
-    audNum:'328m',
+    id:'328m',
     title: "The Blood Speaks (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-blood-speaks-part-1/',
@@ -2626,7 +2626,7 @@ const audioSermons = [
     date: "January- 30-1972",
   },
   {
-    audNum:'329m',
+    id:'329m',
     title: "The Blood Speaks (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-blood-speaks-part-2/',
@@ -2634,7 +2634,7 @@ const audioSermons = [
     date: "January- 30-1972",
   },
   {
-    audNum:'330m',
+    id:'330m',
     title: "The Capstone",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-capstone/',
@@ -2642,7 +2642,7 @@ const audioSermons = [
     date: "September- 16-1972",
   },
   {
-    audNum:'331m',
+    id:'331m',
     title: "The Cares Of This Life",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-cares-of-this-life/',
@@ -2650,7 +2650,7 @@ const audioSermons = [
     date: "November- 10-1968",
   },
   {
-    audNum:'332m',
+    id:'332m',
     title: "The Coming Of The King",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-coming-of-the-king/',
@@ -2658,7 +2658,7 @@ const audioSermons = [
     date: "December- 6-1972",
   },
   {
-    audNum:'333m',
+    id:'333m',
     title: "The Cup Of Salvation #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-cup-of-salvation-1-part-1/',
@@ -2666,7 +2666,7 @@ const audioSermons = [
     date: "November- 15-1970",
   },
   {
-    audNum:'334m',
+    id:'334m',
     title: "The Cup Of Salvation #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-cup-of-salvation-1-part-2/',
@@ -2674,7 +2674,7 @@ const audioSermons = [
     date: "November- 15-1970",
   },
   {
-    audNum:'335m',
+    id:'335m',
     title: "The Cup Of Salvation #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-cup-of-salvation-2/',
@@ -2682,7 +2682,7 @@ const audioSermons = [
     date: "November- 15-1970",
   },
   {
-    audNum:'336m',
+    id:'336m',
     title: "The Days Of Noe (Last Message Preached)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-days-of-noe-last-message-preached/',
@@ -2690,7 +2690,7 @@ const audioSermons = [
     date: "August- 1-1973",
   },
   {
-    audNum:'337m',
+    id:'337m',
     title: "The Divine Sculptor's Masterpiece",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-divine-sculptors-masterpiece/',
@@ -2698,7 +2698,7 @@ const audioSermons = [
     date: "May- 26-1968",
   },
   {
-    audNum:'338m',
+    id:'338m',
     title: "The Eunuchs Of The Lord Jesus Christ",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/01-the-eunuchs-of-the-lord-jesus-christ/',
@@ -2706,7 +2706,7 @@ const audioSermons = [
     date: "April- 1-1966",
   },
   {
-    audNum:'339m',
+    id:'339m',
     title: "The Evil Nature",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-evil-nature/',
@@ -2714,7 +2714,7 @@ const audioSermons = [
     date: "October- 11-1964",
   },
   {
-    audNum:'340m',
+    id:'340m',
     title: "The Eye To The Body (Jeff, In)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-eye-to-the-body-jeff-in/',
@@ -2722,7 +2722,7 @@ const audioSermons = [
     date: "August- 20-1972",
   },
   {
-    audNum:'341m',
+    id:'341m',
     title: "The Eyes Of The Lord (In Relation To The Body Of Christ)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-eyes-of-the-lord-in-relation-to-the-body-of-christ/',
@@ -2730,7 +2730,7 @@ const audioSermons = [
     date: "October- 3-1971",
   },
   {
-    audNum:'342m',
+    id:'342m',
     title: "The Friend Of The Bridegroom",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-friend-of-the-bridegroom/',
@@ -2738,7 +2738,7 @@ const audioSermons = [
     date: "April- 12-1970",
   },
   {
-    audNum:'343m',
+    id:'343m',
     title: "The Godhead",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-godhead/',
@@ -2746,7 +2746,7 @@ const audioSermons = [
     date: "October- 30-1969",
   },
   {
-    audNum:'344m',
+    id:'344m',
     title: "The Good Samaritan",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-good-samaritan/',
@@ -2754,7 +2754,7 @@ const audioSermons = [
     date: "July- 30-1967",
   },
   {
-    audNum:'345m',
+    id:'345m',
     title: "The Great Physician (In Relation To Pregnancy & Birth) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-great-physician-in-relation-to-pregnancy-birth-part-1/',
@@ -2762,7 +2762,7 @@ const audioSermons = [
     date: "January- 24-1971",
   },
   {
-    audNum:'346m',
+    id:'346m',
     title: "The Great Physician (In Relation To Pregnancy & Birth) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-great-physician-in-relation-to-pregnancy-birth-part-2/',
@@ -2770,7 +2770,7 @@ const audioSermons = [
     date: "January- 24-1971",
   },
   {
-    audNum:'347m',
+    id:'347m',
     title: "The Great Whore (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-great-whore-part-1/',
@@ -2778,7 +2778,7 @@ const audioSermons = [
     date: "October- 19-1969",
   },
   {
-    audNum:'348m',
+    id:'348m',
     title: "The Great Whore (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-great-whore-part-2/',
@@ -2786,7 +2786,7 @@ const audioSermons = [
     date: "October- 19-1969",
   },
   {
-    audNum:'349m',
+    id:'349m',
     title: "The Great Word Test",
     type: "mp3",
     audioUrl:'',
@@ -2794,7 +2794,7 @@ const audioSermons = [
     date: "June- 4-1972",
   },
   {
-    audNum:'350m',
+    id:'350m',
     title: "The Great Word Test (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-great-word-test/',
@@ -2802,7 +2802,7 @@ const audioSermons = [
     date: "March- 7-1971",
   },
   {
-    audNum:'351m',
+    id:'351m',
     title: "The Great Word Test (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-great-word-test-part-1/',
@@ -2810,7 +2810,7 @@ const audioSermons = [
     date: "March- 7-1971",
   },
   {
-    audNum:'352m',
+    id:'352m',
     title: "The Hardening Heart",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-hardening-heart/',
@@ -2818,7 +2818,7 @@ const audioSermons = [
     date: "February- 18-1968",
   },
   {
-    audNum:'353m',
+    id:'353m',
     title: "The Hireling Shepherd",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-hireling-shepherd/',
@@ -2826,7 +2826,7 @@ const audioSermons = [
     date: "April- 11-1965",
   },
   {
-    audNum:'354m',
+    id:'354m',
     title: "The Image Of The Invisible GOD",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-image-of-the-invisible-god/',
@@ -2834,7 +2834,7 @@ const audioSermons = [
     date: "November- 21-1971",
   },
   {
-    audNum:'355m',
+    id:'355m',
     title: "The Invisible GOD Made Visible",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-invisible-god-made-visible/',
@@ -2842,7 +2842,7 @@ const audioSermons = [
     date: "October- 31-1971",
   },
   {
-    audNum:'356m',
+    id:'356m',
     title: "The Kingdom Is Rent From Thee (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-kingdom-is-rent-from-thee-part-1/',
@@ -2850,7 +2850,7 @@ const audioSermons = [
     date: "November- 17-1968",
   },
   {
-    audNum:'357m',
+    id:'357m',
     title: "The Kingdom Is Rent From Thee (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-kingdom-is-rent-from-thee-part-2/',
@@ -2858,7 +2858,7 @@ const audioSermons = [
     date: "November- 17-1968",
   },
   {
-    audNum:'358m',
+    id:'358m',
     title: "The Last Day Ministry",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-last-day-ministry/',
@@ -2866,7 +2866,7 @@ const audioSermons = [
     date: "October- 15-1965",
   },
   {
-    audNum:'359m',
+    id:'359m',
     title: "The Latter Rain",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-latter-rain/',
@@ -2874,7 +2874,7 @@ const audioSermons = [
     date: "July- 11-1971",
   },
   {
-    audNum:'360m',
+    id:'360m',
     title: "The Lightning Of The Candle",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-lightning-of-the-candle/',
@@ -2882,7 +2882,7 @@ const audioSermons = [
     date: "June- 27-1971",
   },
   {
-    audNum:'361m',
+    id:'361m',
     title: "The Lost Capstone",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-lost-capstone/',
@@ -2890,7 +2890,7 @@ const audioSermons = [
     date: "September- 17-1972",
   },
   {
-    audNum:'362m',
+    id:'362m',
     title: "The Man Child",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-man-child/',
@@ -2898,7 +2898,7 @@ const audioSermons = [
     date: "October- 22-1972",
   },
   {
-    audNum:'363m',
+    id:'363m',
     title: "The Man-Child Made Manifested In This Hour",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-man-child-made-manifested-in-this-hour/',
@@ -2906,7 +2906,7 @@ const audioSermons = [
     date: "August- 13-1966",
   },
   {
-    audNum:'364m',
+    id:'364m',
     title: "The Mind Of Christ",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-mind-of-christ/',
@@ -2914,7 +2914,7 @@ const audioSermons = [
     date: "January- 1-1967",
   },
   {
-    audNum:'365m',
+    id:'365m',
     title: "The Ministry Of The Bride",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-ministry-of-the-bride/',
@@ -2922,7 +2922,7 @@ const audioSermons = [
     date: "April- 23-1967",
   },
   {
-    audNum:'366m',
+    id:'366m',
     title: "The Perfect Word For The Perfect Day (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-perfect-word-for-the-perfect-day-part-1/',
@@ -2930,7 +2930,7 @@ const audioSermons = [
     date: "February- 7-1971",
   },
   {
-    audNum:'367m',
+    id:'367m',
     title: "The Perfect Word For The Perfect Day (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-perfect-word-for-the-perfect-day-part-2/',
@@ -2938,7 +2938,7 @@ const audioSermons = [
     date: "February- 7-1971",
   },
   {
-    audNum:'368m',
+    id:'368m',
     title: "The Return Of The Same Jesus (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-return-of-the-same-jesus-part-1/',
@@ -2946,7 +2946,7 @@ const audioSermons = [
     date: "August- 22-1971",
   },
   {
-    audNum:'369m',
+    id:'369m',
     title: "The Return Of The Same Jesus (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-return-of-the-same-jesus-part-2/',
@@ -2954,7 +2954,7 @@ const audioSermons = [
     date: "August- 22-1971",
   },
   {
-    audNum:'370m',
+    id:'370m',
     title: "The Things Concerning Himself",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-things-concerning-himself/',
@@ -2962,7 +2962,7 @@ const audioSermons = [
     date: "May- 30-1973",
   },
   {
-    audNum:'371m',
+    id:'371m',
     title: "The Token (#1) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-token-1-part-1/',
@@ -2970,7 +2970,7 @@ const audioSermons = [
     date: "March- 22-1970",
   },
   {
-    audNum:'372m',
+    id:'372m',
     title: "The Token (#1) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-token-1-part-2/',
@@ -2978,7 +2978,7 @@ const audioSermons = [
     date: "March- 22-1970",
   },
   {
-    audNum:'373m',
+    id:'373m',
     title: "The Token (#2) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-token-2-part-1/',
@@ -2986,7 +2986,7 @@ const audioSermons = [
     date: "March- 22-1970",
   },
   {
-    audNum:'374m',
+    id:'374m',
     title: "The Token (#2) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-token-2-part-2/',
@@ -2994,7 +2994,7 @@ const audioSermons = [
     date: "March- 22-1970",
   },
   {
-    audNum:'375m',
+    id:'375m',
     title: "The Token Nuggets (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-token-nuggets-1/',
@@ -3002,7 +3002,7 @@ const audioSermons = [
     date: "July- 23-1972",
   },
   {
-    audNum:'376m',
+    id:'376m',
     title: "The Token Nuggets (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-token-nuggets-2/',
@@ -3010,7 +3010,7 @@ const audioSermons = [
     date: "July- 23-1972",
   },
   {
-    audNum:'377m',
+    id:'377m',
     title: "The Truth Shall Make You Free (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-truth-shall-make-you-free-part-1/',
@@ -3018,7 +3018,7 @@ const audioSermons = [
     date: "February- 28-1971",
   },
   {
-    audNum:'378m',
+    id:'378m',
     title: "The Truth Shall Make You Free (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-truth-shall-make-you-free-part-2/',
@@ -3026,7 +3026,7 @@ const audioSermons = [
     date: "February- 28-1971",
   },
   {
-    audNum:'379m',
+    id:'379m',
     title: "The Vision Today",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-vision-today/',
@@ -3034,7 +3034,7 @@ const audioSermons = [
     date: "August- 22-1971",
   },
   {
-    audNum:'380m',
+    id:'380m',
     title: "The Voice Of The Archangel",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-voice-of-the-archangel/',
@@ -3042,7 +3042,7 @@ const audioSermons = [
     date: "November- 22-1970",
   },
   {
-    audNum:'381m',
+    id:'381m',
     title: "The Voice Of The Archangel #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-voice-of-the-archangel-1-part-1/',
@@ -3050,7 +3050,7 @@ const audioSermons = [
     date: "January- 14-1973",
   },
   {
-    audNum:'382m',
+    id:'382m',
     title: "The Voice Of The Archangel #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-voice-of-the-archangel-1-part-2/',
@@ -3058,7 +3058,7 @@ const audioSermons = [
     date: "January- 14-1973",
   },
   {
-    audNum:'383m',
+    id:'383m',
     title: "The Voice Of The Archangel #2",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-voice-of-the-archangel-2/',
@@ -3066,7 +3066,7 @@ const audioSermons = [
     date: "January- 14-1973",
   },
   {
-    audNum:'384m',
+    id:'384m',
     title: "The Voice That Catches The Bride (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-voice-that-catches-the-bride-part-1/',
@@ -3074,7 +3074,7 @@ const audioSermons = [
     date: "November- 22-1970",
   },
   {
-    audNum:'385m',
+    id:'385m',
     title: "The Voice That Catches The Bride (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-voice-that-catches-the-bride-part-2/',
@@ -3082,7 +3082,7 @@ const audioSermons = [
     date: "November- 22-1970",
   },
   {
-    audNum:'386m',
+    id:'386m',
     title: "The Way Of Salvation",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-way-of-salvation/',
@@ -3090,7 +3090,7 @@ const audioSermons = [
     date: "November- 8-1970",
   },
   {
-    audNum:'387m',
+    id:'387m',
     title: "The Word Of His Patience",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/the-word-of-his-patience/',
@@ -3098,7 +3098,7 @@ const audioSermons = [
     date: "May- 23-1973",
   },
   {
-    audNum:'388m',
+    id:'388m',
     title: "Things Reproved Are Made Manifested",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/things-reproved-are-made-manifested/',
@@ -3106,7 +3106,7 @@ const audioSermons = [
     date: "October- 4-1970",
   },
   {
-    audNum:'389m',
+    id:'389m',
     title: "Tormenting The Ungodly (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tormenting-the-ungodly-part-1/',
@@ -3114,7 +3114,7 @@ const audioSermons = [
     date: "November- 17-1968",
   },
   {
-    audNum:'390m',
+    id:'390m',
     title: "Tormenting The Ungodly (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/tormenting-the-ungodly-part-2/',
@@ -3122,7 +3122,7 @@ const audioSermons = [
     date: "November- 17-1968",
   },
   {
-    audNum:'391m',
+    id:'391m',
     title: "Trinidad Service",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/trinidad-service/',
@@ -3130,7 +3130,7 @@ const audioSermons = [
     date: "December- 23-1972",
   },
   {
-    audNum:'392m',
+    id:'392m',
     title: 'Trinidad Service "Son Of Man" (Part 1)',
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/trinidad-service-son-of-man-part-1/',
@@ -3138,7 +3138,7 @@ const audioSermons = [
     date: "December- 24-1972",
   },
   {
-    audNum:'393m',
+    id:'393m',
     title: 'Trinidad Service "Son Of Man" (Part 2)',
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/trinidad-service-son-of-man-part-2/',
@@ -3146,7 +3146,7 @@ const audioSermons = [
     date: "December- 24-1972",
   },
   {
-    audNum:'394m',
+    id:'394m',
     title: "Trinidad Trip & Ministers Testimonies",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/trinidad-trip-ministers-testimonies/',
@@ -3154,7 +3154,7 @@ const audioSermons = [
     date: "January- 19-1972",
   },
   {
-    audNum:'395m',
+    id:'395m',
     title: "Troubling Of Waters",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/troubling-of-waters/',
@@ -3162,7 +3162,7 @@ const audioSermons = [
     date: "November- 1-1970",
   },
   {
-    audNum:'396m',
+    id:'396m',
     title: "True Atonement (Christ Rev. From Heaven) (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/true-atonement-christ-rev-from-heaven-part-1/',
@@ -3170,7 +3170,7 @@ const audioSermons = [
     date: "May- 7-1972",
   },
   {
-    audNum:'397m',
+    id:'397m',
     title: "True Atonement (Christ Rev. From Heaven) (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/true-atonement-christ-rev-from-heaven-part-2/',
@@ -3178,7 +3178,7 @@ const audioSermons = [
     date: "May- 7-1972",
   },
   {
-    audNum:'398m',
+    id:'398m',
     title: "True Church",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/true-church/',
@@ -3186,7 +3186,7 @@ const audioSermons = [
     date: "April- 23-1970",
   },
   {
-    audNum:'399m',
+    id:'399m',
     title: "Trumpet Of Jubilee (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/trumpet-of-jubilee-part-1/',
@@ -3194,7 +3194,7 @@ const audioSermons = [
     date: "March- 16-1969",
   },
   {
-    audNum:'400m',
+    id:'400m',
     title: "Trumpet Of Jubilee (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/trumpet-of-jubilee-part-2/',
@@ -3202,7 +3202,7 @@ const audioSermons = [
     date: "March- 16-1969",
   },
   {
-    audNum:'401m',
+    id:'401m',
     title: "Truth",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/truth/',
@@ -3210,7 +3210,7 @@ const audioSermons = [
     date: "May- 6-1973",
   },
   {
-    audNum:'402m',
+    id:'402m',
     title: "Two Great Women And Their Reward",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-great-women-and-their-reward/',
@@ -3218,7 +3218,7 @@ const audioSermons = [
     date: "December- 10-1967",
   },
   {
-    audNum:'403m',
+    id:'403m',
     title: "Two Kingdoms #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-1-part-1/',
@@ -3226,7 +3226,7 @@ const audioSermons = [
     date: "September- 13-1970",
   },
   {
-    audNum:'404m',
+    id:'404m',
     title: "Two Kingdoms #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-1-part-2/',
@@ -3234,7 +3234,7 @@ const audioSermons = [
     date: "September- 13-1970",
   },
   {
-    audNum:'405m',
+    id:'405m',
     title: "Two Kingdoms #2 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-2-part-1/',
@@ -3242,7 +3242,7 @@ const audioSermons = [
     date: "September- 13-1970",
   },
   {
-    audNum:'406m',
+    id:'406m',
     title: "Two Kingdoms #2 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-2-part-2/',
@@ -3250,7 +3250,7 @@ const audioSermons = [
     date: "September- 13-1970",
   },
   {
-    audNum:'407m',
+    id:'407m',
     title: "Two Kingdoms #3 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-3-part-1/',
@@ -3258,7 +3258,7 @@ const audioSermons = [
     date: "September- 14-1970",
   },
   {
-    audNum:'408m',
+    id:'408m',
     title: "Two Kingdoms #3 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-3-part-2/',
@@ -3266,7 +3266,7 @@ const audioSermons = [
     date: "September- 14-1970",
   },
   {
-    audNum:'409m',
+    id:'409m',
     title: "Two Kingdoms #4 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-4-part-1/',
@@ -3274,7 +3274,7 @@ const audioSermons = [
     date: "April- 11-1971",
   },
   {
-    audNum:'410m',
+    id:'410m',
     title: "Two Kingdoms #4 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-4-part-2/',
@@ -3282,7 +3282,7 @@ const audioSermons = [
     date: "April- 11-1971",
   },
   {
-    audNum:'411m',
+    id:'411m',
     title: "Two Kingdoms #5 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-5-part-1/',
@@ -3290,7 +3290,7 @@ const audioSermons = [
     date: "April- 18-1970",
   },
   {
-    audNum:'412m',
+    id:'412m',
     title: "Two Kingdoms #5 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-5-part-2/',
@@ -3298,7 +3298,7 @@ const audioSermons = [
     date: "April- 18-1970",
   },
   {
-    audNum:'413m',
+    id:'413m',
     title: "Two Kingdoms #6 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-6-part-1/',
@@ -3306,7 +3306,7 @@ const audioSermons = [
     date: "April- 18-1971",
   },
   {
-    audNum:'414m',
+    id:'414m',
     title: "Two Kingdoms #6 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-kingdoms-6-part-2/',
@@ -3314,7 +3314,7 @@ const audioSermons = [
     date: "April- 18-1971",
   },
   {
-    audNum:'415m',
+    id:'415m',
     title: "Two Trees In Eden (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-trees-in-eden-1/',
@@ -3322,7 +3322,7 @@ const audioSermons = [
     date: "March- 18-1973",
   },
   {
-    audNum:'416m',
+    id:'416m',
     title: "Two Trees In Eden (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/two-trees-in-eden-2/',
@@ -3330,7 +3330,7 @@ const audioSermons = [
     date: "March- 18-1973",
   },
   {
-    audNum:'417m',
+    id:'417m',
     title: "Unclean Spirits Like Frogs (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/unclean-spirits-like-frogs-1/',
@@ -3338,7 +3338,7 @@ const audioSermons = [
     date: "August- 6-1972",
   },
   {
-    audNum:'418m',
+    id:'418m',
     title: "Unclean Spirits Like Frogs (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/unclean-spirits-like-frogs-2/',
@@ -3346,7 +3346,7 @@ const audioSermons = [
     date: "August- 6-1972",
   },
   {
-    audNum:'419m',
+    id:'419m',
     title: "Vain Jangling",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/vain-jangling/',
@@ -3354,7 +3354,7 @@ const audioSermons = [
     date: "July- 25-1969",
   },
   {
-    audNum:'420m',
+    id:'420m',
     title: "Villa Capri",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/villa-capri/',
@@ -3362,7 +3362,7 @@ const audioSermons = [
     date: "July- 22-1961",
   },
   {
-    audNum:'421m',
+    id:'421m',
     title: "Walking In The Light With Eye Single",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/walking-in-the-light-with-eye-single/',
@@ -3370,7 +3370,7 @@ const audioSermons = [
     date: "September- 19-1971",
   },
   {
-    audNum:'422m',
+    id:'422m',
     title: "Walking On The Water",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/walking-on-the-water/',
@@ -3378,7 +3378,7 @@ const audioSermons = [
     date: "November- 9-1969",
   },
   {
-    audNum:'423m',
+    id:'423m',
     title: "Wandering Thoughts",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/wandering-thoughts/',
@@ -3386,7 +3386,7 @@ const audioSermons = [
     date: "February- 6-1969",
   },
   {
-    audNum:'424m',
+    id:'424m',
     title: "Wedding Garment",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/wedding-garment/',
@@ -3394,7 +3394,7 @@ const audioSermons = [
     date: "February- 15-1970",
   },
   {
-    audNum:'425m',
+    id:'425m',
     title: "What Price Token #1 (Pearl Of Great Price)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/what-price-token-1-pearl-of-great-price/',
@@ -3402,7 +3402,7 @@ const audioSermons = [
     date: "August- 23-1970",
   },
   {
-    audNum:'426m',
+    id:'426m',
     title: "What Price Token #2 (Parable Of The Net)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/what-price-token-2-parable-of-the-net/',
@@ -3410,7 +3410,7 @@ const audioSermons = [
     date: "August- 23-1970",
   },
   {
-    audNum:'427m',
+    id:'427m',
     title: "What's Upon My Heart #1 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/whats-upon-my-heart-1-part-1/',
@@ -3418,7 +3418,7 @@ const audioSermons = [
     date: "April- 27-1969",
   },
   {
-    audNum:'428m',
+    id:'428m',
     title: "What's Upon My Heart #1 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/whats-upon-my-heart-1-part-1/',
@@ -3426,7 +3426,7 @@ const audioSermons = [
     date: "April- 27-1969",
   },
   {
-    audNum:'429m',
+    id:'429m',
     title: "What's Upon My Heart #2 (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/whats-upon-my-heart-2-part-1/',
@@ -3434,7 +3434,7 @@ const audioSermons = [
     date: "April- 27-1969",
   },
   {
-    audNum:'430m',
+    id:'430m',
     title: "What's Upon My Heart #2 (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/whats-upon-my-heart-2-part-2/',
@@ -3442,7 +3442,7 @@ const audioSermons = [
     date: "April- 27-1969",
   },
   {
-    audNum:'431m',
+    id:'431m',
     title: "Who Can Be Saved",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-can-be-saved/',
@@ -3450,7 +3450,7 @@ const audioSermons = [
     date: "February- 28-1971",
   },
   {
-    audNum:'432m',
+    id:'432m',
     title: "Who Gets The Token In The Endtime",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-gets-the-token-in-the-endtime/',
@@ -3458,7 +3458,7 @@ const audioSermons = [
     date: "January- 14-1971",
   },
   {
-    audNum:'433m',
+    id:'433m',
     title: "Who Hath Believed Our Report (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-hath-believed-our-report-part-1/',
@@ -3466,7 +3466,7 @@ const audioSermons = [
     date: "September- 29-1968",
   },
   {
-    audNum:'434m',
+    id:'434m',
     title: "Who Hath Believed Our Report (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-hath-believed-our-report-part-2/',
@@ -3474,7 +3474,7 @@ const audioSermons = [
     date: "September- 29-1968",
   },
   {
-    audNum:'435m',
+    id:'435m',
     title: "Who Hath Belived Our Report (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-hath-belived-our-report-part-1/',
@@ -3482,7 +3482,7 @@ const audioSermons = [
     date: "March- 14-1971",
   },
   {
-    audNum:'436m',
+    id:'436m',
     title: "Who Hath Belived Our Report (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-hath-belived-our-report-part-2/',
@@ -3490,7 +3490,7 @@ const audioSermons = [
     date: "March- 14-1971",
   },
   {
-    audNum:'437m',
+    id:'437m',
     title: "Who Understandeth God",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/who-understandeth-god/',
@@ -3498,7 +3498,7 @@ const audioSermons = [
     date: "October- 8-1970",
   },
   {
-    audNum:'438m',
+    id:'438m',
     title: "Why Did God Hate Esau (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/why-did-god-hate-esau-part-1/',
@@ -3506,7 +3506,7 @@ const audioSermons = [
     date: "October- 26-1969",
   },
   {
-    audNum:'439m',
+    id:'439m',
     title: "Why Did God Hate Esau (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/why-did-god-hate-esau-part-2/',
@@ -3514,7 +3514,7 @@ const audioSermons = [
     date: "October- 26-1969",
   },
   {
-    audNum:'440m',
+    id:'440m',
     title: "Why God Hated Esau",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/why-god-hated-esau/',
@@ -3522,7 +3522,7 @@ const audioSermons = [
     date: "January- 28-1973",
   },
   {
-    audNum:'441m',
+    id:'441m',
     title: "Why Is Christ Rejected Today",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/why-is-christ-rejected-today/',
@@ -3530,7 +3530,7 @@ const audioSermons = [
     date: "September- 3-1970",
   },
   {
-    audNum:'442m',
+    id:'442m',
     title: "Why Judas Was Not Saved",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/why-judas-was-not-saved/',
@@ -3538,7 +3538,7 @@ const audioSermons = [
     date: "December- 22-1971",
   },
   {
-    audNum:'443m',
+    id:'443m',
     title: "Why Our Prayers Not Answered",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/why-our-prayers-not-answered/',
@@ -3546,7 +3546,7 @@ const audioSermons = [
     date: "November- 21-1971",
   },
   {
-    audNum:'444m',
+    id:'444m',
     title: "Woman At The Well (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/woman-at-the-well-part-1/',
@@ -3554,7 +3554,7 @@ const audioSermons = [
     date: "May- 3-1971",
   },
   {
-    audNum:'445m',
+    id:'445m',
     title: "Woman At The Well (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/woman-at-the-well-part-2/',
@@ -3562,7 +3562,7 @@ const audioSermons = [
     date: "May- 3-1971",
   },
   {
-    audNum:'446m',
+    id:'446m',
     title: "Woman At The Well (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/woman-at-the-well-part-1-2/',
@@ -3570,7 +3570,7 @@ const audioSermons = [
     date: "May- 3-1970",
   },
   {
-    audNum:'447m',
+    id:'447m',
     title: "Woman At The Well (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/woman-at-the-well-part-2-2/',
@@ -3578,7 +3578,7 @@ const audioSermons = [
     date: "May- 3-1970",
   },
   {
-    audNum:'448m',
+    id:'448m',
     title: "Women At The Well",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/women-at-the-well/',
@@ -3586,7 +3586,7 @@ const audioSermons = [
     date: "May- 28-1972",
   },
   {
-    audNum:'449m',
+    id:'449m',
     title: "Word Atonement For The Bride (#1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/word-atonement-for-the-bride-1/',
@@ -3594,7 +3594,7 @@ const audioSermons = [
     date: "January- 23-1972",
   },
   {
-    audNum:'450m',
+    id:'450m',
     title: "Word Atonement For The Bride (#2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/word-atonement-for-the-bride-2/',
@@ -3602,7 +3602,7 @@ const audioSermons = [
     date: "January- 23-1972",
   },
   {
-    audNum:'451m',
+    id:'451m',
     title: "Word Atonement For The Bride (#3)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/word-atonement-for-the-bride-3/',
@@ -3610,7 +3610,7 @@ const audioSermons = [
     date: "January- 26-1972",
   },
   {
-    audNum:'452m',
+    id:'452m',
     title: "Word Of Promise (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/word-of-promise-part-1/',
@@ -3618,7 +3618,7 @@ const audioSermons = [
     date: "February- 8-1970",
   },
   {
-    audNum:'453m',
+    id:'453m',
     title: "Word Of Promise (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/word-of-promise-part-2/',
@@ -3626,7 +3626,7 @@ const audioSermons = [
     date: "February- 8-1970",
   },
   {
-    audNum:'454m',
+    id:'454m',
     title: "Your Adversary",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/your-adversary/',
@@ -3634,7 +3634,7 @@ const audioSermons = [
     date: "January- 28-1971",
   },
   {
-    audNum:'455m',
+    id:'455m',
     title: "Your Revelation Is The Victory (Part 1)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/your-revelation-is-the-victory-part-1/',
@@ -3642,7 +3642,7 @@ const audioSermons = [
     date: "October- 26-1969",
   },
   {
-    audNum:'456m',
+    id:'456m',
     title: "Your Revelation Is The Victory (Part 2)",
     type: "mp3",
     audioUrl:'https://robertlambert.org/audiopost/your-revelation-is-the-victory-part-2/',

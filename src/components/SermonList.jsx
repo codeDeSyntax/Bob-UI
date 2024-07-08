@@ -31,7 +31,7 @@ const SermonList = ({ setIsSidebarVisible }) => {
           >
             <div className="p-2">
               <p className="text-[.8rem] text-text">{sermon.title}</p>
-              <p className="text-[.6rem] text-[#2596ee] font-mono">
+              <p className="text-[.6rem] text-[#3eb7ee] font-mono">
                 {sermon.date}
                 {sermon.hasOwnProperty('type') ? ' - 🔊' : ''}
               </p>

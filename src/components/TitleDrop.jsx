@@ -48,7 +48,7 @@ const TitleDrop = () => {
     const titleFiltered = sermonCollection.filter((eachSermon) => {
       return eachSermon.title.toLowerCase().startsWith(letter.toLowerCase());
     });
-    
+
     setFilteredSermons(titleFiltered);
     setDropdownOpen(false); // Close the dropdown after filtering
   };
@@ -67,7 +67,7 @@ const TitleDrop = () => {
       >
         Title
         <svg
-          className={`w-2.5 h-2.5 ml-3 transform ${dropdownOpen ? 'rotate-90' : 'rotate-0'}`}
+          className={`w-2.5 h-2.5 ml-3 transform text-[white] ${dropdownOpen ? 'rotate-90' : 'rotate-0'}`}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

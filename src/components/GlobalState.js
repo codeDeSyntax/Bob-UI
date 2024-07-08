@@ -54,14 +54,19 @@ const SermonProvider = ({ children }) => {
         alert('This sermon won’t add to tab');
         return prevSermons;
       }
+      if(sermon.hasOwnProperty('type')){
+        alert('This sermon won’t add')
+        return prevSermons
+      }
       return [...prevSermons, sermon];
     });
   }
 
   const deleteSermonInTab = (sermon) => {
-    setSermonsInTab((prev) =>
-      prev.filter((thisSermon) => thisSermon.id !== sermon.id)
-    );
+    setSermonsInTab(sermonsInTab.filter((sermonInTab) => sermonInTab.id !== sermon.id));
+    // setSermonsInTab((prevSermons) => {
+    //   return prevSermons.filter((sermonInTab) => sermonInTab !== sermon);
+    // });
   };
 
   const displaySermonInTab = (sermon) => {

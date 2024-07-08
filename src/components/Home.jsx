@@ -1,4 +1,10 @@
-import React, { useState, useContext, useCallback, useRef } from 'react';
+import React, {
+  useState,
+  useContext,
+  useCallback,
+  useRef,
+  useEffect,
+} from 'react';
 import { SermonContext } from '../components/GlobalState';
 import { motion, AnimatePresence } from 'framer-motion';
 import HomeContent from './HomeContent';
@@ -15,6 +21,7 @@ import {
   FaCog,
   FaTimes,
   FaSort,
+  FaEyeSlash,
 } from 'react-icons/fa';
 import TitleDrop from './TitleDrop';
 import SermonList from './SermonList';
@@ -75,48 +82,52 @@ const Home = () => {
     tap: { scale: 0.9 },
   };
 
-  const handleSermonClick = useCallback(
-    (sermon) => {
-      setSelectedSermon(sermon);
-    },
-    [setSelectedSermon]
-  );
+  const handleSermonClick = (sermon) => {
+    setSelectedSermon(sermon);
+  };
 
   const searchText = (searchTerm) => {
-    const input = searchTerm.trim().toLowerCase().replace(/[^\w\s]/g, '');
+    const input = searchTerm
+      .trim()
+      .toLowerCase()
+      .replace(/[^\w\s]/g, '');
     const paragraph = sermonTextRef.current;
     const text = paragraph.innerText.toLowerCase().replace(/[^\w\s]/g, '');
-  
+
     // Remove previous highlights
     paragraph.innerHTML = paragraph.innerText;
-  
+
     if (input.length > 0) {
       const inputRegex = input.split(/\s+/).join('\\s*');
       const regex = new RegExp(inputRegex, 'gi');
       const matches = text.match(regex);
-  
+
       if (matches) {
         let highlightedText = paragraph.innerHTML;
-  
+
         matches.forEach((match) => {
           // Create a regex for the original match in the paragraph with punctuation and spaces
           const originalMatchRegex = new RegExp(
             match.split('').join('[^\\w\\s]*'),
             'i'
           );
-          const originalMatchArray = paragraph.innerText.match(originalMatchRegex);
-  
+          const originalMatchArray =
+            paragraph.innerText.match(originalMatchRegex);
+
           if (originalMatchArray) {
             const originalMatch = originalMatchArray[0];
             highlightedText = highlightedText.replace(
-              new RegExp(originalMatch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'),
+              new RegExp(
+                originalMatch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
+                'gi'
+              ),
               `<span class="highlight">$&</span>`
             );
           }
         });
-  
+
         paragraph.innerHTML = highlightedText;
-  
+
         // Scroll to the first highlighted text
         const highlightElement = paragraph.querySelector('.highlight');
         if (highlightElement) {
@@ -131,9 +142,11 @@ const Home = () => {
       }
     }
   };
-  
-  
-  
+
+  const toggleSidebarVisibility = () => {
+    setIsSidebarVisible((prevState) => !prevState); // Toggle based on previous state
+    console.log(!isSidebarVisible); // This will still show the old state due to the async nature of setState
+  };
 
   return (
     <motion.div
@@ -147,16 +160,27 @@ const Home = () => {
           {activeTab === 'Sermons' ? (
             <div className="flex items-center justify-center gap-4">
               <div className="h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]">
-                <FaBook
-                  id="Sermons1"
-                  title="open sideBar/Sermon "
-                  size={22}
-                  className="text-text hover:cursor-pointer"
-                  onClick={() => {
-                    setActiveTab('Sermons');
-                    setIsSidebarVisible((prev) => !prev);
-                  }}
-                />
+                {!isSidebarVisible ? (
+                  <FaBook
+                    size={22}
+                    className="text-text hover:cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setActiveTab('Sermons');
+                      toggleSidebarVisibility(); // Use the toggle function
+                    }}
+                  />
+                ) : (
+                  <FaEyeSlash
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      toggleSidebarVisibility(); // Use the toggle function
+                    }}
+                    className="hover:cursor-pointer"
+                  />
+                )}
               </div>
               <div
                 className="h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937] cursor-pointer"
@@ -191,12 +215,32 @@ const Home = () => {
               variants={iconVariants}
               whileHover="hover"
               whileTap="tap"
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 setActiveTab('Sermons');
-                setIsSidebarVisible((prev) => !prev);
               }}
             >
-              <FaBook size={22} title="open sermon/sidebar" id="Sermons" />
+              {!isSidebarVisible ? (
+                <FaBook
+                  size={22}
+                  className="text-text hover:cursor-pointer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setActiveTab('Sermons');
+                    toggleSidebarVisibility(); // Use the toggle function
+                  }}
+                />
+              ) : (
+                <FaEyeSlash
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    toggleSidebarVisibility(); // Use the toggle function
+                  }}
+                  className="hover:cursor-pointer"
+                />
+              )}
             </motion.div>
             <motion.div
               className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center bg-[#1f2937]"
@@ -261,12 +305,17 @@ const Home = () => {
                   <div
                     className="flex items-center justify-center p-2 rounded-lg bg-background gap-2 hover:cursor-pointer group"
                     key={sermon.id}
-                    onClick={() => handleSermonClick(sermon)}
                   >
-                    <p className="text-[.7rem]">{sermon.title.slice(0, 10)}</p>
+                    <p
+                      className="text-[.7rem]"
+                      onClick={() => handleSermonClick(sermon)}
+                    >
+                      {sermon.title.slice(0, 10)}
+                    </p>
                     <FaTimes
                       className="text-textBlue text-[.5rem] cursor-pointer size-3 opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out transform group-hover:scale-110"
                       onClick={(e) => {
+                        e.preventDefault();
                         e.stopPropagation();
                         deleteSermonInTab(sermon);
                       }}
@@ -284,13 +333,13 @@ const Home = () => {
       </header>
       <div className="flex pt-16">
         <AnimatePresence>
-          {!isSidebarVisible && activeTab === 'Sermons' && (
+          {isSidebarVisible && activeTab === 'Sermons' && (
             <motion.aside
               initial={{ x: -250 }}
               animate={{ x: 0 }}
               exit={{ x: -250 }}
               transition={{ duration: 0.3 }}
-              className="w-[24rem] bg-gradient-to-b from-background to-lighter text-white p-4 overflow-y-auto fixed inset-y-0  mt-[8rem]"
+              className="w-[24rem] bg-gradient-to-b from-background to-lighter text-white p-4 overflow-y-auto fixed inset-y-0 mt-[8rem]"
             >
               <SermonList setIsSidebarVisible={setIsSidebarVisible} />
             </motion.aside>
